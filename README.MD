@@ -1,4 +1,4 @@
-<!-- `For start`
+`For start`
 
 1. Refresh your main here:
 
@@ -10,4 +10,4 @@
 
 4. npm start
 
-5. Go to http://localhost:3000 -->
+5. Go to http://localhost:3000
