@@ -31,7 +31,6 @@ app.use(
   },
   express.static(__dirname + "/views/js")
 );
-app.use("/views/video", express.static(__dirname + "/views/image/Video"));
 app.engine("ejs", require("ejs").renderFile);
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: false }));
