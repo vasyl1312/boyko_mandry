@@ -5,9 +5,9 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 const homeRoutes = require("./routes/homeRoutes");
-// const loginRoutes = require("./routes/loginRoutes");
-// const adminRoutes = require("./routes/adminRoutes");
-// const logoutRoutes = require("./routes/logoutRoutes");
+const loginRoutes = require("./routes/loginRoutes");
+const adminRoutes = require("./routes/adminRoutes");
+const logoutRoutes = require("./routes/logoutRoutes");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -45,9 +45,9 @@ app.use(
 // app.use(fileMiddleware.single("avatar"));
 
 app.use("/", homeRoutes);
-// app.use("/deshychi_vhid", loginRoutes);
-// app.use("/deshychi_vyhid", logoutRoutes);
-// app.use("/deshychi_admin", adminRoutes);
+app.use("/boyko_vhid", loginRoutes);
+app.use("/boyko_vyhid", logoutRoutes);
+app.use("/admin", adminRoutes);
 
 const start = async () => {
   try {
