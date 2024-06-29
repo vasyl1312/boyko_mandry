@@ -59,7 +59,7 @@
           />
         </div>
         <div class="contacts-wrap">
-          <a href="tel:+380989524273">
+          <a href="tel:<%= mainPhones %>">
             <div class="contacts-wrap__button">
               <img
                 loading="lazy"
@@ -95,7 +95,7 @@
         </div>
         <div class="header-white-line"></div>
         <div class="header-navigation">
-          <a href="tel:+380989524273">
+          <a href="tel:<%= mainPhones %>">
             <div class="header-contacts__phone">
               <img src="/image/icon-footer-telephone.svg" alt="telephone" />
               <%= mainPhones %>
@@ -170,26 +170,24 @@
           <div class="wrappTitleTextWrap__columnName">
             <div class="wrappTitleTextWrap__columnName_el">
               <span class="address">Адреса</span>
-              <span class="addressInfo"
-                >Львівська обл., Самбірський р-н, c. Стрілки, вул. Михайла Вербицького, 10</span
-              >
+              <span class="addressInfo"><%= address %></span>
             </div>
             <div class="wrappTitleTextWrap__columnName_el">
               <span class="index">Індекс</span>
-              <span class="indexInfo">82092</span>
+              <span class="indexInfo"><%= postcode %></span>
             </div>
             <div class="wrappTitleTextWrap__columnName_el">
               <span class="mail">Пошта</span
               ><span class="mailWrap">
                 <img src="/image-page-contacts/icon-mail.svg" alt="mail" />
-                <a href="mailto:<%= mainEmails %>"><%= mainEmails %></a></span
+                <a href="mailto:<%= email %>"><%= email %></a></span
               >
             </div>
             <div class="wrappTitleTextWrap__columnName_el">
               <span class="tel">Телефон</span
               ><span class="linkWrap">
                 <img src="/image-page-contacts/TelephoneFill.svg" alt="tel" />
-                <a href="tel:+<%= transferPhones %>">+<%= transferPhones %></a></span
+                <a href="tel:<%= phone %>"><%= phone %></a></span
               >
             </div>
           </div>
@@ -263,7 +261,7 @@
               </div>
             </div>
             <div class="footer-contacts">
-              <a href="tel:+380989524273">
+              <a href="tel:<%= mainPhones %>">
                 <div class="footer-contacts__phone">
                   <img src="/image/icon-footer-telephone.svg" alt="telephone" />
                   <%= mainPhones %>

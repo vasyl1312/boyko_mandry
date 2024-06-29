@@ -4,6 +4,7 @@ const MainEmail = require("../models/MainEmail");
 const Inst = require("../models/Inst");
 const Facebook = require("../models/Facebook");
 const TransferPhone = require("../models/TransferPhone");
+const Contact = require("../models/Contacts");
 const router = new Router();
 
 router.get("/", async (req, res) => {
@@ -13,6 +14,7 @@ router.get("/", async (req, res) => {
     const insts = await Inst.find();
     const facebooks = await Facebook.find();
     const transferPhones = await TransferPhone.find();
+    const contacts = await Contact.find();
 
     res.render("admin", {
       login: req.session.user,
@@ -21,6 +23,10 @@ router.get("/", async (req, res) => {
       insts: insts[0].instagram,
       facebooks: facebooks[0].facebook,
       transferPhones: transferPhones[0].phone,
+      address: contacts[0].address,
+      postcode: contacts[0].postcode,
+      email: contacts[0].email,
+      phone: contacts[0].phone,
     });
   } else {
     res.redirect("/");
@@ -97,11 +103,28 @@ router.post("/edit_transfer_phone", async (req, res) => {
   }
 });
 
+router.post("/edit_contacts", async (req, res) => {
+  if (req.session && req.session.user) {
+    const { address, postcode, email, phone } = req.body;
+
+    const contacts = await Contact.find();
+    contacts[0].address = address;
+    contacts[0].postcode = postcode;
+    contacts[0].email = email;
+    contacts[0].phone = phone;
+    await contacts[0].save();
+
+    return res.redirect("/admin");
+  } else {
+    return res.redirect("/");
+  }
+});
+
 // router.post("/add", async (req, res) => {
 //   if (req.session && req.session.user) {
-//     const { inst } = req.body;
+//     const { address, postcode, phone, email } = req.body;
 
-//     const newPhone = new TransferPhone({ phone: inst });
+//     const newPhone = new Contact({ address, postcode, phone, email });
 //     await newPhone.save();
 
 //     return res.redirect("/admin");

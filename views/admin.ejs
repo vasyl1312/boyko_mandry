@@ -78,9 +78,35 @@
 
         <button type="submit">Edit</button>
       </form>
+      <hr />
+
+      <hr />
+      <h2>Edit contacts</h2>
+      <form action="/admin/edit_contacts" method="post">
+        <input
+          type="text"
+          name="address"
+          placeholder="Enter new address"
+          value="<%= address %>"
+        />
+        <input
+          type="text"
+          name="postcode"
+          placeholder="Enter new postcode"
+          value="<%= postcode %>"
+        />
+        <input type="text" name="email" placeholder="Enter new email" value="<%= email %>" />
+        <input type="text" name="phone" placeholder="Enter new phone" value="<%= phone %>" />
+
+        <button type="submit">Edit</button>
+      </form>
+      <hr />
 
       <!-- <form action="/admin/add" method="post">
-        <input type="text" name="inst" placeholder="Enter new address" />
+        <input type="text" name="address" placeholder="Enter new address" />
+        <input type="text" name="postcode" placeholder="Enter new postcode" />
+        <input type="text" name="phone" placeholder="Enter new phone" />
+        <input type="text" name="email" placeholder="Enter new email" />
 
         <button type="submit">add</button>
       </form> -->

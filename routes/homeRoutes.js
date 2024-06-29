@@ -4,6 +4,7 @@ const MainEmail = require("../models/MainEmail");
 const Inst = require("../models/Inst");
 const Facebook = require("../models/Facebook");
 const TransferPhone = require("../models/TransferPhone");
+const Contact = require("../models/Contacts");
 const router = new Router();
 
 const routes = [
@@ -32,6 +33,7 @@ async function getMainContactInfo() {
     const insts = await Inst.find();
     const facebooks = await Facebook.find();
     const transferPhones = await TransferPhone.find();
+    const contacts = await Contact.find();
 
     return {
       mainPhones: mainPhones[0].phone,
@@ -39,6 +41,10 @@ async function getMainContactInfo() {
       insts: insts[0].instagram,
       facebooks: facebooks[0].facebook,
       transferPhones: transferPhones[0].phone,
+      address: contacts[0].address,
+      postcode: contacts[0].postcode,
+      email: contacts[0].email,
+      phone: contacts[0].phone,
     };
   } catch (error) {
     console.error(error);
