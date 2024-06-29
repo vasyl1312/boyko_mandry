@@ -66,6 +66,19 @@
       </form>
       <hr />
 
+      <hr />
+      <h2>Edit transfer phone</h2>
+      <form action="/admin/edit_transfer_phone" method="post">
+        <input
+          type="text"
+          name="new_transfer_phone"
+          placeholder="Enter new transfer phone"
+          value="<%= transferPhones %>"
+        />
+
+        <button type="submit">Edit</button>
+      </form>
+
       <!-- <form action="/admin/add" method="post">
         <input type="text" name="inst" placeholder="Enter new address" />
 

@@ -3,6 +3,7 @@ const MainPhone = require("../models/MainPhone");
 const MainEmail = require("../models/MainEmail");
 const Inst = require("../models/Inst");
 const Facebook = require("../models/Facebook");
+const TransferPhone = require("../models/TransferPhone");
 const router = new Router();
 
 router.get("/", async (req, res) => {
@@ -11,6 +12,7 @@ router.get("/", async (req, res) => {
     const mainEmails = await MainEmail.find();
     const insts = await Inst.find();
     const facebooks = await Facebook.find();
+    const transferPhones = await TransferPhone.find();
 
     res.render("admin", {
       login: req.session.user,
@@ -18,6 +20,7 @@ router.get("/", async (req, res) => {
       mainEmails: mainEmails[0].email,
       insts: insts[0].instagram,
       facebooks: facebooks[0].facebook,
+      transferPhones: transferPhones[0].phone,
     });
   } else {
     res.redirect("/");
@@ -80,17 +83,31 @@ router.post("/edit_fb", async (req, res) => {
   }
 });
 
+router.post("/edit_transfer_phone", async (req, res) => {
+  if (req.session && req.session.user) {
+    const { new_transfer_phone } = req.body;
+
+    const transferPhones = await TransferPhone.find();
+    transferPhones[0].phone = new_transfer_phone;
+    await transferPhones[0].save();
+
+    return res.redirect("/admin");
+  } else {
+    return res.redirect("/");
+  }
+});
+
 // router.post("/add", async (req, res) => {
 //   if (req.session && req.session.user) {
 //     const { inst } = req.body;
 
-//     const newPhone = new Facebook({ facebook: inst });
+//     const newPhone = new TransferPhone({ phone: inst });
 //     await newPhone.save();
 
 //     return res.redirect("/admin");
 //   } else {
 //     return res.redirect("/");
 //   }
-// })
+// });
 
 module.exports = router;

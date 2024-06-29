@@ -3,6 +3,7 @@ const MainPhone = require("../models/MainPhone");
 const MainEmail = require("../models/MainEmail");
 const Inst = require("../models/Inst");
 const Facebook = require("../models/Facebook");
+const TransferPhone = require("../models/TransferPhone");
 const router = new Router();
 
 router.get("/", (req, res) => {
@@ -18,6 +19,7 @@ router.post("/", async (req, res) => {
       const mainEmails = await MainEmail.find();
       const insts = await Inst.find();
       const facebooks = await Facebook.find();
+      const transferPhones = await TransferPhone.find();
 
       res.render("admin", {
         login,
@@ -25,6 +27,7 @@ router.post("/", async (req, res) => {
         mainEmails: mainEmails[0].email,
         insts: insts[0].instagram,
         facebooks: facebooks[0].facebook,
+        transferPhones: transferPhones[0].phone,
       });
     } else {
       res.render("login", { error: "Wrong login or password!" });

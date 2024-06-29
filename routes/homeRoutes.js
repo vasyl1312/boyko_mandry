@@ -3,10 +3,11 @@ const MainPhone = require("../models/MainPhone");
 const MainEmail = require("../models/MainEmail");
 const Inst = require("../models/Inst");
 const Facebook = require("../models/Facebook");
+const TransferPhone = require("../models/TransferPhone");
 const router = new Router();
 
 const routes = [
-  { path: "/", name: "index" },
+  { path: "/", template: "index" },
   { path: "/routes", template: "routes" },
   { path: "/aboutUs", template: "aboutUs" },
   { path: "/attraction", template: "attraction" },
@@ -30,12 +31,14 @@ async function getMainContactInfo() {
     const mainEmails = await MainEmail.find();
     const insts = await Inst.find();
     const facebooks = await Facebook.find();
+    const transferPhones = await TransferPhone.find();
 
     return {
       mainPhones: mainPhones[0].phone,
       mainEmails: mainEmails[0].email,
       insts: insts[0].instagram,
       facebooks: facebooks[0].facebook,
+      transferPhones: transferPhones[0].phone,
     };
   } catch (error) {
     console.error(error);
