@@ -1,18 +1,9 @@
 const { Router } = require("express");
 const MainPhone = require("../models/MainPhone");
 const MainEmail = require("../models/MainEmail");
+const Inst = require("../models/Inst");
+const Facebook = require("../models/Facebook");
 const router = new Router();
-
-router.get("/", async (req, res) => {
-  try {
-    const mainPhones = await MainPhone.find();
-    const mainEmails = await MainEmail.find();
-    res.render("index", { mainPhones: mainPhones[0].phone, mainEmails: mainEmails[0].email });
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("Internal Server Error");
-  }
-});
 
 const routes = [
   { path: "/", name: "index" },
@@ -30,14 +21,22 @@ const routes = [
   { path: "/attractionKolubu", templates: "attractionKolubu" },
   { path: "/routesChurch", template: "routesChurch" },
   { path: "/routesHeroes", template: "routesHeroes" },
-  {path: "/routesMaydan", template: "routesMaydan" },
+  { path: "/routesMaydan", template: "routesMaydan" },
 ];
 
 async function getMainContactInfo() {
   try {
     const mainPhones = await MainPhone.find();
     const mainEmails = await MainEmail.find();
-    return { mainPhones: mainPhones[0].phone, mainEmails: mainEmails[0].email };
+    const insts = await Inst.find();
+    const facebooks = await Facebook.find();
+
+    return {
+      mainPhones: mainPhones[0].phone,
+      mainEmails: mainEmails[0].email,
+      insts: insts[0].instagram,
+      facebooks: facebooks[0].facebook,
+    };
   } catch (error) {
     console.error(error);
     throw error;

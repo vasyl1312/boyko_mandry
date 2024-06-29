@@ -1,16 +1,23 @@
 const { Router } = require("express");
 const MainPhone = require("../models/MainPhone");
 const MainEmail = require("../models/MainEmail");
+const Inst = require("../models/Inst");
+const Facebook = require("../models/Facebook");
 const router = new Router();
 
 router.get("/", async (req, res) => {
   if (req.session && req.session.user) {
     const mainPhones = await MainPhone.find();
     const mainEmails = await MainEmail.find();
+    const insts = await Inst.find();
+    const facebooks = await Facebook.find();
+
     res.render("admin", {
       login: req.session.user,
       mainPhones: mainPhones[0].phone,
       mainEmails: mainEmails[0].email,
+      insts: insts[0].instagram,
+      facebooks: facebooks[0].facebook,
     });
   } else {
     res.redirect("/");
@@ -44,5 +51,46 @@ router.post("/edit_main_email", async (req, res) => {
     return res.redirect("/");
   }
 });
+
+router.post("/edit_inst", async (req, res) => {
+  if (req.session && req.session.user) {
+    const { new_inst } = req.body;
+
+    const insts = await Inst.find();
+    insts[0].instagram = new_inst;
+    await insts[0].save();
+
+    return res.redirect("/admin");
+  } else {
+    return res.redirect("/");
+  }
+});
+
+router.post("/edit_fb", async (req, res) => {
+  if (req.session && req.session.user) {
+    const { new_fb } = req.body;
+
+    const facebooks = await Facebook.find();
+    facebooks[0].facebook = new_fb;
+    await facebooks[0].save();
+
+    return res.redirect("/admin");
+  } else {
+    return res.redirect("/");
+  }
+});
+
+// router.post("/add", async (req, res) => {
+//   if (req.session && req.session.user) {
+//     const { inst } = req.body;
+
+//     const newPhone = new Facebook({ facebook: inst });
+//     await newPhone.save();
+
+//     return res.redirect("/admin");
+//   } else {
+//     return res.redirect("/");
+//   }
+// })
 
 module.exports = router;

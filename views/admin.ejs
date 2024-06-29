@@ -42,6 +42,35 @@
         <button type="submit">Edit</button>
       </form>
       <hr />
+
+      <hr />
+      <h2>Edit instagram</h2>
+      <form action="/admin/edit_inst" method="post">
+        <input type="text" name="new_inst" placeholder="Enter new instagram" value="<%= insts %>" />
+
+        <button type="submit">Edit</button>
+      </form>
+      <hr />
+
+      <hr />
+      <h2>Edit facebook</h2>
+      <form action="/admin/edit_fb" method="post">
+        <input
+          type="text"
+          name="new_fb"
+          placeholder="Enter new facebook"
+          value="<%= facebooks %>"
+        />
+
+        <button type="submit">Edit</button>
+      </form>
+      <hr />
+
+      <!-- <form action="/admin/add" method="post">
+        <input type="text" name="inst" placeholder="Enter new address" />
+
+        <button type="submit">add</button>
+      </form> -->
     </main>
   </body>
 </html>
