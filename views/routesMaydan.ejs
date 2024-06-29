@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1"
+    />
+    <link rel="shortcut icon" href="/image/logo-icon.png" type="image/x-icon" />
+    <link rel="canonical" href="https://www.boykomandry.com/" />
+    <link rel="stylesheet" href="/css/routesMaydan.css" />
+    <meta name="description" content="Безкоштовні туристичні маршрути горами Бойківщини" />
+    <meta
+      name="keywords"
+      content="екотуризм, походи в гори, мандри, піший туризм, вело туризм , Бойківщина, Карпати, бойко мандри, бойкомандри, Бойкомандри, Бойко Мандри, БойкоМандри, піший маршрут, веломаршрут"
+    />
+    <title>БойкоМандри</title>
+    <title>Безкоштовні туристичні маршрути горами Бойківщини</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="container-header" class="container-header">
+        <div class="logo">
+          <a href="index.html"><img src="/image/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="navigation">
+          <div class="navigation__item">
+            <ul>
+              <a class="navigation__item__1" href="routes.html">
+                <li class="routes">Маршрути</li>
+              </a>
+              <a class="navigation__item__2" href="/services.html">
+                <li class="services">Послуги</li>
+              </a>
+              <a class="navigation__item__3" href="/contacts.html">
+                <li class="contacts">Контакти</li>
+              </a>
+            </ul>
+          </div>
+          <div class="language-change">
+            <img
+              loading="lazy"
+              class="language-change__image-earth"
+              src="/image/language.svg"
+              alt="earth"
+            />
+            <!-- <p class="language-change__layout">Ua</p> -->
+            <div class="custom-select">
+              <div class="select-trigger"></div>
+              <ul class="select-options">
+                <li data-value="Ua">Ua</li>
+                <li data-value="Pol">Pol</li>
+                <li data-value="Eng">Eng</li>
+              </ul>
+            </div>
+            <img
+              loading="lazy"
+              class="language-change__image-row"
+              src="/image/language-row.svg"
+              alt="language-row"
+            />
+          </div>
+          <div class="contacts-wrap">
+            <a href="tel:+380989524273">
+              <div class="contacts-wrap__button">
+                <img
+                  loading="lazy"
+                  class="contacts-wrap__image-phone"
+                  src="/image/telephone.svg"
+                  alt="Telephone"
+                />
+                <p class="contacts-wrap__text"><%= mainPhones %></p>
+              </div>
+            </a>
+          </div>
+          <div id="menu" class="menu">
+            <a href="#" class="menu__button">
+              <span class="menuText">Меню</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-header" class="mobile-header">
+        <div class="header-info">
+          <div class="header-text">
+            <ul>
+              <a href="/routes.html" class="routes">Маршрути</a>
+              <a href="/services.html" class="services">Послуги</a>
+              <a href="/reach.html" class="howToGet">Як доїхати</a>
+              <a href="/contacts.html" class="contacts">Контакти</a>
+            </ul>
+            <ul>
+              <a href="/attractions.html" class="attractions"> Пам'ятки </a>
+              <a href="/aboutUs.html" class="aboutUs"> Про нас </a>
+              <a href="#" class="blogAndEvents"> Блог та події </a>
+            </ul>
+          </div>
+          <div class="header-white-line"></div>
+          <div class="header-navigation">
+            <a href="tel:+380989524273">
+              <div class="header-contacts__phone">
+                <img src="/image/icon-footer-telephone.svg" alt="telephone" />
+                <%= mainPhones %>
+              </div>
+            </a>
+            <a href="mailto:<%= mainEmails %>">
+              <div class="header-contacts__email">
+                <img src="/image/icon-footer-mail.svg" alt="email" />
+                <%= mainEmails %>
+              </div>
+            </a>
+            <div class="header-social-networks">
+              <a href="https://www.instagram.com/boykomandry/" target="_blank">
+                <div class="header-social-networks__instagram">
+                  <img src="/image/icon-footer-instagram.svg" alt="inst-icon" />
+                </div>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61550602395011&locale=uk_UA"
+                target="_blank"
+              >
+                <div class="header-social-networks__facebook">
+                  <img src="/image/icon-footer-facebook.svg" alt="facebook-icon" />
+                </div>
+              </a>
+            </div>
+            <div class="header-language-change">
+              <img
+                loading="lazy"
+                class="header-language-change__image-earth"
+                src="/image/Globe.svg"
+                alt="earth"
+              />
+              <!-- <p class="header-language-change__layout">Ua</p> -->
+              <div class="custom-select">
+                <div class="select-trigger" style="font-family: Raleway; color: #fff">Ua</div>
+                <ul class="select-options">
+                  <li data-value="Ua">Ua</li>
+                  <li data-value="Eng">Eng</li>
+                  <li data-value="Pol">Pol</li>
+                </ul>
+              </div>
+              <img
+                loading="lazy"
+                class="language-change__image-row"
+                src="/image/mobile-header-row.svg"
+                alt="language-row"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header-image-wrap">
+          <div class="header-image">
+            <a href="#" id="close-icon" class="close-icon">
+              <img src="/image/x.svg" alt="x" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-navigation">
+      <p class="page-navigation__main">
+        <a class="NavMain" href="index.html">Головна</a>
+      </p>
+      <p class="page-navigation__row">></p>
+      <p class="page-navigation__routes">
+        <a class="NavRoutes" href="routes.html">Маршрути</a>
+      </p>
+      <p class="page-navigation__row">></p>
+      <p class="page-navigation__route3">
+        <a class="NavRoute3" href="routesHeroes.html">Маршрут 3</a>
+      </p>
+    </div>
+    <div class="container-Church">
+      <div class="route-wrap">
+        <!-- <div class="bottom-row">
+					<img
+						id="rotateImage"
+						onclick="toggleContainer()"
+						src="/image-page-routesChurch/row-for-scroll.svg"
+						alt="row"
+					/>
+				</div> -->
+        <div class="animate-on-scroll">
+          <div class="route-versions__1">
+            <div class="route-versions__1_title">
+              <div class="routes1-info-wrap">
+                <div class="routes1-info-wrap__level">
+                  <p class="levelTranslate1">для активних</p>
+                </div>
+                <div class="routes1-info-wrap__distance">
+                  <p class="distanceTranslate1">25 км</p>
+                </div>
+                <div class="routes1-info-wrap__height">
+                  <img loading="lazy" src="/image/routes-mountain.svg" alt="mountain" />
+                  <p class="heightTranslate1">пік — 664 м</p>
+                </div>
+              </div>
+              <div class="rotes1-title-wrap">
+                <div class="routes1-title">
+                  <p class="routes1-title__accent">
+                    <span class="route1NumTranslate">Маршрут 3</span>
+                  </p>
+                  <p class="route1Translate">Бойківський майдан</p>
+                </div>
+                <div class="routes1-line">
+                  <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo" />
+                  <p class="Strilky">Гвоздець</p>
+                  <div class="line"></div>
+                  <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo" />
+                  <p class="Tysovytsia">Головецько</p>
+                  <div class="line"></div>
+                  <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo" />
+                  <p class="Ploske">Бабина</p>
+                  <div class="line"></div>
+                  <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo" />
+                  <p class="Ploske">Мшанець</p>
+                  <div class="line"></div>
+                  <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo" />
+                  <p class="Ploske">г. Магура</p>
+                </div>
+                <div class="routes1-subtitle">
+                  <p class="route1SubtitleTranslate">
+                    Історія дороги... Історія боротьби за дорогу... Історія громадянського
+                    суспільства...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="routes1-img">
+              <img class="Church" loading="lazy" src="/image/Magura.webp" alt="Nedilna" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Елемент, який з'являється та зникає -->
+    <div id="container">
+      <div class="animate-on-scroll">
+        <div class="element" id="element-anotherMargin">
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="container-station">
+            <div class="container-station-title">
+              <div class="container-station-title__station-number">
+                <span class="text">Зупинка</span>
+                <span class="number">1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="container-station-subtitle">
+            <h2 class="subtitle1translate">«Вася, давай весло!»</h2>
+          </div>
+          <div class="container-station-paragraph">
+            <p class="parag1Translate">
+              Дорога зі Стрілок до Мшанця С141704 простягається на 18 км і сполучає 11 прикордонних
+              сіл: Гвоздець, Головецько, Бабину, Виців, Грозьову, Ріп’яну, Дністрик, Смеречку,
+              Плоске, Мшанець і Галівку. Впродовж кількадесят років вона перебувала в аварійному
+              стані, що спричинило економічний занепад краю та соціальну катастрофу. На початку 2018
+              року мшанецький священик УГКЦ завіз колективне звернення ініціативної групи з
+              підписами місцевих жителів у Київ до мажоритарного народного депутата, паралельно
+              залишивши скарги на обласній та урядовій гарячих лініях. Та результату це не дало. 
+              Тож 17 червня 2018 року священик з місцевими дітьми випустили сатиричний музичний кліп
+              «Вася, давай весло! Як школярі додому плавають…» про те, як, повертаючись додому, учні
+              змушені перепливати величезну калабаню на дорозі. Через день приїхали журналісти
+              телеканалів «1+1» і «НТА» та зняли власні сюжети про стан дороги. Результат: влітку
+              відремонтували 1 км дороги.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="container-station-img">
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station1Main.webp" alt="station1" />
+            </div>
+            <div class="container-station-img__info-img">
+              <div class="info-ChurchIMG">
+                <img src="/image-page-routesMaydan/station1Attrac.jpg" alt="stationAtt" />
+              </div>
+              <div class="wrap-info">
+                <h4 class="moreAboutAttractions">Більше інформації про цю пам’ятку</h4>
+                <a href="/attraction.html"><img src="/image/emotions-row.svg" alt="row" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="container-station">
+            <div class="container-station-title">
+              <div class="container-station-title__station-number">
+                <span class="text">Зупинка</span>
+                <span class="number">2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="container-station-subtitle">
+            <h2 class="subtitle2translate">«Казка на дорозі»</h2>
+          </div>
+          <div class="container-station-paragraph">
+            <p class="parag2Translate">
+              2019-й рік почався гаряче — президентські вибори. 20 березня побачила світ пародія на
+              мегапопулярний тоді хіт «Плакала» гурту «Казка» — «Плакала: Казка на дорозі», яка
+              стала інформаційною «бомбою», справжньою сенсацією, набравши поза 3 млн переглядів у
+              всіх соцмережах. «Швидка допомога», яка запізно приїжджає, «Пожежна», що намертво
+              грузне за пів кілометра до місця пожежі, «Хлібна», яка перевертається з товаром у
+              кювет, «Автодор», який латає ями багном з річки — не авторська видумка, а поетично
+              оспівані реалії буття у цих селах… «Тут плакали усі…»  Згадка у пісні поіменно всіх
+              чиновників, починаючи з місцевих та закінчуючи тодішнім Президентом України Петром
+              Порошенком спричинила шквал журналістської уваги. У Мшанець приїхали знімальні групи
+              всіх національних та львівських телеканалів.  Разом з кліпом була запущена кампанія
+              збору підписів на дві електронні петиції про «Капітальний ремонт автомобільної дороги
+              Стрілки-Мшанець С141704» — до Кабінету Міністрів України і Львівської обласної ради. 
+              Результат: тогочасний прем’єр-міністр України Володимир Гройсман у прямому етері
+              просив почекати, поки уряд добереться до сільських доріг.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="container-station-img">
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station2Main.webp" alt="station1" />
+            </div>
+            <div class="container-station-img__info-img">
+              <div class="info-ChurchIMG">
+                <img src="/image-page-routesMaydan/station2Attrac.jpg" alt="stationAtt" />
+              </div>
+              <div class="wrap-info">
+                <h4 class="moreAboutAttractions">Більше інформації про цю пам’ятку</h4>
+                <a href="/attraction.html"><img src="/image/emotions-row.svg" alt="row" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="container-station">
+            <div class="container-station-title">
+              <div class="container-station-title__station-number">
+                <span class="text">Зупинка</span>
+                <span class="number">3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="container-station-subtitle">
+            <h2 class="subtitle3translate">«З чого починається дорога?»</h2>
+          </div>
+          <div class="container-station-paragraph">
+            <p class="parag3Translate">
+              Вибори пройшли бурхливо, новим Президентом України став Володимир Зеленський, який
+              призначив і нового очільника Львівської області. Та ситуація з дорогою залишалася така
+              ж, зусилля ініціативної групи потрапити на прийом до голови ЛОДА були намарними.  «З
+              чого починається дорога?» — це черговий ролик дітей і священика, що привертає увагу до
+              ще однієї біди — жахливої роботи грейдерів, які «розрівнюють» дорогу, нагортаючи
+              великі горби глини перед кюветом, що унеможливлює стікання води з дороги. Таку
+              «роботу» часто виконували напідпитку, з припіднятою лопатою, що лиш злегка
+              «пригладжувала» поверхню дороги…  Але, не зважаючи на всеукраїнський резонанс та
+              минулорічні обіцянки чиновників різного рівня, на капітальний ремонт дороги
+              Стрілки-Мшанець у 2019 році виділили 0 грн 0 коп. Це спричинило справедливе обурення
+              жителів сіл, тож 29 вересня вони за закликом мшанецького священика УГКЦ та
+              ініціативної групи вийшли на першу мирну акцію протесту на трасі міжнародного значення
+              Львів-Ужгород у селі Лопушанка-Хомина. Акція тривала безперервно 3 дні. Результат:
+              розпочався процес виготовлення проектно-кошторисної документації на 13 км даної
+              дороги.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="container-station-img">
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station3Main.webp" alt="station1" />
+            </div>
+            <div class="container-station-img__info-img">
+              <div class="info-ChurchIMG">
+                <img src="/image-page-routesMaydan/station3Attrac.jpg" alt="stationAtt" />
+              </div>
+              <div class="wrap-info">
+                <h4 class="moreAboutAttractions">Більше інформації про цю пам’ятку</h4>
+                <a href="/attractionMagura.html"><img src="/image/emotions-row.svg" alt="row" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="container-station">
+            <div class="container-station-title">
+              <div class="container-station-title__station-number">
+                <span class="text">Зупинка</span>
+                <span class="number">4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="container-station-subtitle">
+            <h2 class="subtitle4translate">«Карантин forever»</h2>
+          </div>
+          <div class="container-station-paragraph">
+            <p class="parag4Translate">
+              14 лютого 2020 року Президент України запустив амбіційну програму «Велике будівництво:
+              зшити країну». Та в той же день львівські чиновники повідомили ініціативну групу, що
+              ця програма — не для наших сіл і не для дороги Стрілки-Мшанець, яка відповідала всім
+              її критеріям: з’єднувала половину сіл Стрілківської територіальної громади з опорною
+              лікарнею, школою, центром громади тощо. Безрезультатними виявилися піврічні спроби
+              потрапити на прийом до нового очільника Львівської області: всі офіційні шляхи для
+              ініціативної групи були закритими…  «В Карпатах весна — позеленіло, та далі буксує
+              нашеє діло…» — крик відчаю із кліпу «Карантин forever». 2020-й — рік небачених досі
+              карантинних обмежень у всьому світі. Та в наших селах ці обмеження жодним чином не
+              відчулися, де-факто «карантин» тут тривав кількадесят років: коли дощ — по дорозі
+              плавали, а в сонячну погоду — задихалися від пилюки, можливість пересування дуже й
+              дуже обмежена… Тоді ж діти у Галівці зняли реальне відео, як вони посадили бульбу на
+              дорозі (урожай зібрали через пару місяців, коли доспіла).  Результат: обіцянка
+              чиновників відремонтувати перші 4 км дороги виявилася пустослівною, затвердження
+              проектно-кошторисної документації на 13 км дороги перенесли на кінець грудня 2020
+              року, що означало неможливість проведення будь-якого ремонту в цьому році…
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="container-station-img">
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station4Main.webp" alt="station4" />
+            </div>
+            <div class="container-station-img__info-img">
+              <div class="info-ChurchIMG">
+                <img src="/image-page-routesMaydan/station4Attrac.jpg" alt="stationAtt" />
+              </div>
+              <div class="wrap-info">
+                <h4 class="moreAboutAttractions">Більше інформації про цю пам’ятку</h4>
+                <a href="/attractionKhryn.html"><img src="/image/emotions-row.svg" alt="row" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="container-station">
+            <div class="container-station-title">
+              <div class="container-station-title__station-number">
+                <span class="text">Зупинка</span>
+                <span class="number">5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="container-station-subtitle">
+            <h2 class="subtitle5translate">«Дороги немає… Дороги НАЗАД немає…»</h2>
+          </div>
+          <div class="container-station-paragraph">
+            <p class="parag5Translate">
+              У 2020-му році на ремонти доріг у Львівській області з різних джерел виділили рекордні
+              5 млрд 122 млн гривень, що, наприклад, у 2,5 рази більше, ніж у 2018-му році. На
+              покриття одним шаром асфальту 17 км дороги Стрілки-Мшанець потрібно було 148 млн
+              гривень (2,9 % від загальної суми). Однак відповіді ініціативній групі були
+              ідентичними, як і в попередні роки: «Коштів немає, почекайте до наступного року».  У
+              червні громада зрозуміла, що затвердження проектно-кошторисної документації (ПКД), яка
+              була вже де-факто готовою, навмисне затримують до кінця року, щоб не розпочинати
+              ремонт. Оскільки всі інші засоби були використані, залишалася остання можливість —
+              друга мирна акція протесту, що розпочалася 17 червня і (без врахування вихідних)
+              безперервно тривала 4 дні.  Результат: затвердили ПКД, але коштів виділили на ремонт…
+              600 метрів дороги! 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="stationImage">
+            <img src="/image-page-routesMaydan/station5Main1.webp" alt="station5" />
+          </div>
+          <p class="descriptionForstationPhoto">83-літній Яків Писар. 19 червня 2020 року</p>
+          <div class="container-station-img">
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station5Main2.jpg" alt="station5" />
+            </div>
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station5Main3.jpg" alt="station5" />
+            </div>
+          </div>
+          <div class="container-station-img">
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station5Main4.jpg" alt="station5" />
+            </div>
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station5Main5.jpg" alt="station5" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="container-station">
+            <div class="container-station-title">
+              <div class="container-station-title__station-number">
+                <span class="text">Зупинка</span>
+                <span class="number">6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="container-station-subtitle">
+            <h2 class="subtitle6translate">«Воїни світла»</h2>
+          </div>
+          <div class="container-station-paragraph">
+            <p class="parag6Translate">
+              13 липня на трасі Львів-Ужгород у Стрілках розпочалася остання акція протесту, що
+              безперервно тривала 5 днів. Тоді ж священик УГКЦ і 3 парафіянки із Мшанця — Ганна
+              Гудз, Оксана Паращак і Надія Яворська — оголосили акцію голодування до вирішення
+              питання (голодували неповні 4 доби). «Воїни добра, воїни світла — люди у селі хочуть
+              гідно жити!» — слова із музичного відео-звернення до Президента України, яке стало
+              неофіційним гімном «Акції гідності на дорозі» або ж «Бойківського майдану»... Розворот
+              очільника області призвів до найгострішої фази конфлікту: зникнення поліцейських, які
+              згідно закону охороняли мирну акцію протесту, і заміна їх перебраними, повістки
+              активістам в суд, «тітушки» і заслані провокатори, наїзди на мітингувальників на
+              пішохідному переході, намагання «стикнути» між собою учасників акції та водіїв,
+              блокування дороги вантажівками, підбурювання до бійок — ці та інші провокації жителі
+              сіл достойно витримали, не давши жодної причини для силового розгону акції.  Підтримка
+              української і світової громадськості, що спостерігала події у прямому етері, який вели
+              хлопці-школярі у Фейсбуці, зрештою спонукала владу підписати Меморандум із громадою та
+              виділити необхідні кошти. Результат: підписаний Меморандум, проведений тендер,
+              виділені кошти на ремонт дороги Стрілки-Мшанець. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="stationImage">
+            <img src="/image-page-routesMaydan/station6Main1.webp" alt="station5" />
+          </div>
+          <p class="descriptionForstationPhoto">
+            Акція голодування священика та парафіянок греко-католицької громади села Мшанець задля
+            ремонту дороги. 14-17 липня 2020 року.
+          </p>
+          <div class="container-station-img">
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station6Main2.jpg" alt="station5" />
+            </div>
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station6Main3.jpg" alt="station5" />
+            </div>
+          </div>
+          <div class="container-station-img">
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station6Main4.jpg" alt="station5" />
+            </div>
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station6Main5.jpg" alt="station5" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element" id="element-nomargin">
+          <div class="container-station">
+            <div class="container-station-title">
+              <div class="container-station-title__station-number">
+                <span class="text">Зупинка</span>
+                <span class="number">7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="container-station-subtitle">
+            <h2 class="subtitle7translate">«Бойківський майдан» — підсумки</h2>
+          </div>
+          <div class="container-station-paragraph">
+            <p class="parag7Translate">
+              У 2020-му році — половина дороги Стрілки-Мшанець була покрита асфальтом, а вже у
+              2021-му — майже вся дорога застелена одношаровим асфальтовим покриттям. Прокладання
+              другого шару асфальту перервало повномасштабне вторгнення росії 24 лютого 2022 року. 
+              Дуже багато часу чиновники згаяли, шукаючи «а хто ж за ними стоїть». Не вірили в те,
+              що селяни можуть самі зорганізуватися, що є суб’єктами, а не немічними маріонетками у
+              вправних руках «вищих чинів». Не вірили в силу громади і цінності громадянського
+              суспільства… Шукали компромат на ініціаторів… Чи може бути кращий висновок, аніж слова
+              Захара Беркута із однойменної повісті Івана Франка, написані ще у далекому 1882-му
+              році? «Чим ми побідили? … Ми побідили нашим громадським ладом, нашою згодою і
+              дружністю. Уважайте добре на се! Доки будете жити в громадськім порядку, дружно
+              держатися купи, незломно стояти всі за одного, а один за всіх, доти ніяка ворожа сила
+              не побідить вас».  Дорога Стрілки-Мшанець тому підтвердження.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <div class="element">
+          <div class="stationImage">
+            <img src="/image-page-routesMaydan/station7Main1.webp" alt="station5" />
+          </div>
+          <p class="descriptionForstationPhoto">Капітальний ремонт дороги «Стрілки-Мшанець».</p>
+          <div class="container-station-img">
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station7Main2.jpg" alt="station5" />
+            </div>
+            <div class="container-station-img__title-img">
+              <img src="/image-page-routesMaydan/station7Main3.jpg" alt="station5" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Додайте більше елементів за потребою -->
+    </div>
+    <div class="container-hire">
+      <div class="container-hire-wrapper">
+        <div class="container-hire-wrap">
+          <!-- <img src="/image/tents.png" alt="tents"> -->
+          <div class="hire-background">
+            <div class="animate-on-scroll">
+              <div class="hire-background__title">
+                <p class="hireTitleTranslate">Наша спільнота пропонує</p>
+              </div>
+              <div class="hire-background__subtitle">
+                <p class="hireSubtitleTranslate">
+                  У нас можна замовити прокат та проведення екскурсій
+                </p>
+              </div>
+            </div>
+            <div class="animate-on-scroll">
+              <a href="/services.html">
+                <div class="hire-background__button">
+                  <p>
+                    <span class="routesButton">Дізнатись більше</span
+                    ><img src="/image/emotions-row.svg" alt="button_row" />
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="hire-image"><img src="/image/tents.webp" alt="tents" /></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-footer">
+        <div class="animate-on-scroll">
+          <div class="footer-content">
+            <div class="footer-logos">
+              <div class="footer-logos__main">
+                <img src="/image/logo-footer.svg" alt="logo" />
+              </div>
+              <div class="footer-logos__main-info">
+                <p class="footerMainTransalte">
+                  БойкоМандри: туристичні маршрути Стрілківської громади
+                </p>
+              </div>
+              <div class="footer-logos__partner-info">
+                <p class="footerPartnerTransalte">
+                  Проєкт реалізується за підтримки Українського культурного фонду та Стрілківської
+                  сільської ради
+                </p>
+              </div>
+              <div class="footer-logos__partner">
+                <img src="/image/UCF-logo.svg" alt="logo" />
+                <img src="/image/Strilku-logo.svg" alt="logo" />
+              </div>
+            </div>
+            <div class="footer-navigation">
+              <div class="footer-navigation__column1">
+                <a href="routes.html">
+                  <p class="routes">Маршрути</p>
+                </a>
+                <a href="/services.html">
+                  <p class="services">Послуги</p>
+                </a>
+                <a href="/reach.html">
+                  <p class="howToGet">Як доїхати</p>
+                </a>
+                <a href="/contacts.html">
+                  <p class="contacts">Контакти</p>
+                </a>
+              </div>
+              <div class="footer-navigation__column2">
+                <a href="/attractions.html">
+                  <p class="attractions">Пам'ятки</p>
+                </a>
+                <a href="/aboutUs.html">
+                  <p class="aboutUs">Про нас</p>
+                </a>
+                <a href="#">
+                  <p class="blogAndEvents">Блог та події</p>
+                </a>
+              </div>
+            </div>
+            <div class="footer-contacts">
+              <a href="tel:+380989524273">
+                <div class="footer-contacts__phone">
+                  <img src="/image/icon-footer-telephone.svg" alt="telephone" />
+                  <%= mainPhones %>
+                </div>
+              </a>
+              <a href="mailto:<%= mainEmails %>">
+                <div class="footer-contacts__email">
+                  <img src="/image/icon-footer-mail.svg" alt="email" />
+                  <%= mainEmails %>
+                </div>
+              </a>
+              <div class="footer-social-networks">
+                <a href="https://www.instagram.com/boykomandry/" target="_blank">
+                  <div class="footer-social-networks__instagram">
+                    <img src="/image/icon-footer-instagram.svg" alt="inst-icon" />
+                  </div>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61550602395011&locale=uk_UA"
+                  target="_blank"
+                >
+                  <div class="footer-social-networks__facebook">
+                    <img src="/image/icon-footer-facebook.svg" alt="facebook-icon" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="white-line"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom__laws">
+            <p class="footerLawsTranslate">Усі права захищені</p>
+          </div>
+          <div class="footer-bottom__politic">
+            <p class="footerPoliticTranslate">Політика конфіденційності</p>
+          </div>
+          <div class="footer-bottom__designer">
+            <p class="footerDesignerTranslate">Дизайнер: Барабаш Анастасія</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/routesChurch.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+		<script src="/js/langChange.js"></script> -->
+  </body>
+</html>

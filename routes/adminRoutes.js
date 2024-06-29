@@ -17,19 +17,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// router.post("/add", async (req, res) => {
-//   if (req.session && req.session.user) {
-//     const { email } = req.body;
-//     const newMainPhone = new MainEmail({ email });
-
-//     await newMainPhone.save();
-
-//     return res.redirect("/admin");
-//   } else {
-//     return res.redirect("/");
-//   }
-// });
-
 router.post("/edit_main_phone", async (req, res) => {
   if (req.session && req.session.user) {
     const { new_phone } = req.body;
