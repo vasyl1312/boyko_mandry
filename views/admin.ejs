@@ -14,6 +14,40 @@
       <form action="/boyko_vyhid" method="post">
         <button type="submit">Log Out</button>
       </form>
+
+      <hr />
+      <h2>Edit main phone</h2>
+      <form action="/admin/edit_main_phone" method="post">
+        <input
+          type="text"
+          name="new_phone"
+          placeholder="Enter new phone number"
+          value="<%= mainPhones %>"
+        />
+
+        <button type="submit">Edit</button>
+      </form>
+      <hr />
+
+      <hr />
+      <h2>Edit main email</h2>
+      <form action="/admin/edit_main_email" method="post">
+        <input
+          type="text"
+          name="new_email"
+          placeholder="Enter new email"
+          value="<%= mainEmails %>"
+        />
+
+        <button type="submit">Edit</button>
+      </form>
+      <hr />
+
+      <form action="/admin/add" method="post">
+        <input type="text" name="email" placeholder="Enter  email" />
+
+        <button type="submit">Add</button>
+      </form>
     </main>
   </body>
 </html>
