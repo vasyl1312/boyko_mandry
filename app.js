@@ -42,7 +42,6 @@ app.use(
   })
 );
 
-// app.use(fileMiddleware.single("avatar"));
 
 app.use("/", homeRoutes);
 app.use("/boyko_vhid", loginRoutes);
