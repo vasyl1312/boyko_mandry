@@ -14,6 +14,102 @@
       <form action="/boyko_vyhid" method="post">
         <button type="submit">Log Out</button>
       </form>
+
+      <hr />
+      <h2>Edit main phone</h2>
+      <form action="/admin/edit_main_phone" method="post">
+        <input
+          type="text"
+          name="new_phone"
+          placeholder="Enter new phone number"
+          value="<%= mainPhones %>"
+        />
+
+        <button type="submit">Edit</button>
+      </form>
+      <hr />
+
+      <hr />
+      <h2>Edit main email</h2>
+      <form action="/admin/edit_main_email" method="post">
+        <input
+          type="text"
+          name="new_email"
+          placeholder="Enter new email"
+          value="<%= mainEmails %>"
+        />
+
+        <button type="submit">Edit</button>
+      </form>
+      <hr />
+
+      <hr />
+      <h2>Edit instagram</h2>
+      <form action="/admin/edit_inst" method="post">
+        <input type="text" name="new_inst" placeholder="Enter new instagram" value="<%= insts %>" />
+
+        <button type="submit">Edit</button>
+      </form>
+      <hr />
+
+      <hr />
+      <h2>Edit facebook</h2>
+      <form action="/admin/edit_fb" method="post">
+        <input
+          type="text"
+          name="new_fb"
+          placeholder="Enter new facebook"
+          value="<%= facebooks %>"
+        />
+
+        <button type="submit">Edit</button>
+      </form>
+      <hr />
+
+      <hr />
+      <h2>Edit transfer phone</h2>
+      <form action="/admin/edit_transfer_phone" method="post">
+        <input
+          type="text"
+          name="new_transfer_phone"
+          placeholder="Enter new transfer phone"
+          value="<%= transferPhones %>"
+        />
+
+        <button type="submit">Edit</button>
+      </form>
+      <hr />
+
+      <hr />
+      <h2>Edit contacts</h2>
+      <form action="/admin/edit_contacts" method="post">
+        <input
+          type="text"
+          name="address"
+          placeholder="Enter new address"
+          value="<%= address %>"
+        />
+        <input
+          type="text"
+          name="postcode"
+          placeholder="Enter new postcode"
+          value="<%= postcode %>"
+        />
+        <input type="text" name="email" placeholder="Enter new email" value="<%= email %>" />
+        <input type="text" name="phone" placeholder="Enter new phone" value="<%= phone %>" />
+
+        <button type="submit">Edit</button>
+      </form>
+      <hr />
+
+      <!-- <form action="/admin/add" method="post">
+        <input type="text" name="address" placeholder="Enter new address" />
+        <input type="text" name="postcode" placeholder="Enter new postcode" />
+        <input type="text" name="phone" placeholder="Enter new phone" />
+        <input type="text" name="email" placeholder="Enter new email" />
+
+        <button type="submit">add</button>
+      </form> -->
     </main>
   </body>
 </html>

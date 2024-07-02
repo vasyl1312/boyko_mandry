@@ -1,29 +1,67 @@
 const { Router } = require("express");
-// const AboutUs = require("../models/aboutUs");
-// const Contacts = require("../models/contacts");
-// const Gallery = require("../models/gallery");
+const MainPhone = require("../models/MainPhone");
+const MainEmail = require("../models/MainEmail");
+const Inst = require("../models/Inst");
+const Facebook = require("../models/Facebook");
+const TransferPhone = require("../models/TransferPhone");
+const Contact = require("../models/Contacts");
 const router = new Router();
 
-router.get("/", async (req, res) => {
+const routes = [
+  { path: "/", template: "index" },
+  { path: "/routes", template: "routes" },
+  { path: "/aboutUs", template: "aboutUs" },
+  { path: "/attraction", template: "attraction" },
+  { path: "/attractions", template: "attractions" },
+  { path: "/services", template: "services" },
+  { path: "/reach", template: "reach" },
+  { path: "/contacts", template: "contacts" },
+  { path: "/attractionMagura", template: "attractionMagura" },
+  { path: "/attractionKhryn", template: "attractionKhryn" },
+  { path: "/attractionChurchPloske", template: "attractionChurchPloske" },
+  { path: "/attractionOstroverh", template: "attractionOstroverh" },
+  { path: "/attractionKolubu", templates: "attractionKolubu" },
+  { path: "/routesChurch", template: "routesChurch" },
+  { path: "/routesHeroes", template: "routesHeroes" },
+  { path: "/routesMaydan", template: "routesMaydan" },
+];
+
+async function getMainContactInfo() {
   try {
-    // const contact = await Contacts.findOne();
-    // const aboutUs = await AboutUs.find();
-    // const gallery = await Gallery.find().sort({ date: -1 });
+    const mainPhones = await MainPhone.find();
+    const mainEmails = await MainEmail.find();
+    const insts = await Inst.find();
+    const facebooks = await Facebook.find();
+    const transferPhones = await TransferPhone.find();
+    const contacts = await Contact.find();
 
-    // if (!contact) {
-    //   return res.status(404).send("Контакт не знайдено");
-    // }
-
-    // if (!aboutUs) {
-    //   return res.status(404).send("Інформацію в блоку про нас не знайдено");
-    // }
-
-    // res.render("index", { contact, aboutUs, gallery });
-    res.render("index");
+    return {
+      mainPhones: mainPhones[0].phone,
+      mainEmails: mainEmails[0].email,
+      insts: insts[0].instagram,
+      facebooks: facebooks[0].facebook,
+      transferPhones: transferPhones[0].phone,
+      address: contacts[0].address,
+      postcode: contacts[0].postcode,
+      email: contacts[0].email,
+      phone: contacts[0].phone,
+    };
   } catch (error) {
     console.error(error);
-    res.status(500).send("Internal Server Error");
+    throw error;
   }
+}
+
+routes.forEach((route) => {
+  router.get(route.path, async (req, res) => {
+    try {
+      const contactInfo = await getMainContactInfo();
+      res.render(route.template, contactInfo);
+    } catch (error) {
+      console.error(error);
+      res.status(500).send("Internal Server Error");
+    }
+  });
 });
 
 module.exports = router;
