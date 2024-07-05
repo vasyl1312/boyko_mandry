@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					route2Translate: "Святині і герої",
 					route2SubtitleTranslate:
 						"Доторкнутися до історії, відчути подих сакральних перлин бойківської архітектури, зануритися у вир повстанської боротьби і вдарити у висотний дзвін пам'яті.",
-					levelTranslate3: "для найактивніших",
+					levelTranslate3: "для активних",
 					distanceTranslate3: "25 км",
 					heightTranslate3: "пік — 664 м",
 					route3NumTranslate: "Маршрут 3",
@@ -114,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					NavRoutes: "Маршрути",
 					NavRoute1: "Маршрут 1",
 					NavRoute2: "Маршрут 2",
+					NavRoute3: "Маршрут 3",
 					blackLetter: "БойкоМандри:",
 					greenLetter: "зелений туризм",
 					SubHireRoutes:
@@ -128,6 +129,10 @@ document.addEventListener("DOMContentLoaded", function () {
 					Ture: "Тур’є",
 					Nedilna: "Недільна",
 					Topilnitsa: "Топільниця",
+					Gvozdec:"Гвоздець",
+					Golovetsko:"Головецько",
+					Babina:"Бабина",
+					Magura:"г. Магура",
 					text: "Зупинка",
 					subtitle1translate: "Церква Святої прп. Параскевії (Сербської)",
 					parag1Translate:
@@ -183,6 +188,33 @@ document.addEventListener("DOMContentLoaded", function () {
 					subtitle8TranslateHeroes:"Червонокнижний Тис ягідний отруйний у Недільній",
 					parag8TranslateHeroes:"Всі частини цього дерева — кора, листя і навіть деревина — є отруйними для людини. Вони у великій кількості містять таксин, речовину яка для людини і деяких тварин є отруйною. Раніше в будинках навмисне робили деревʼяні балки на стелі з ягіднго тису. Так будинок був захищений від інфекцій. Через масову вирубку для дорогих меблів це дерево тепер є рідкісним і збереглось лише у гірських регіонах нашої країни — Карпатах та Криму. У сиву давнину тис використовувася як надійний спосіб вбити суперника. З деревини виготовляли кубок для напоїв. Випивши з такої чаші вина, людина швидко помирала. Також у народі вірили, що крона цього дерева дуже небезпечні. Вважалось, що під тисом не можна спати, бо більше вже ніколи не прокинешся. Проте з часом було доведено, що це не так. Смертельною дозою для людини є вживання у їжу 100 г свіжої хвої. Також у жодному випадку не можна пробувати гарні червоні ягідки, які ростуть на дереві. Проте олені та зайці вільно їдять кору та хвою листя без шкоди для свого здоров’я. Цікаво, що чим старіше дерево, тим воно отруйніше. А живе тис довго — навіть до 3000 років! Що ж, завітайте на обору (подвір’я), де він росте, і розпитайте у місцевих ґаздів, як їм живеться під цим рідкісним отруйним деревом з цілющими властивостями 🙂 А щоб не пропустити — збережіть його координати: 49.316 899, 23.103 886",
 
+					descriptionForstationPhotoTranslate:"83-літній Яків Писар. 19 червня 2020 року",
+
+					descriptionForstationPhotoTranslate2:"Акція голодування священика та парафіянок греко-католицької громади села Мшанець задля ремонту дороги. 14-17 липня 2020 року.",
+					
+					descriptionForstationPhotoTranslate3:"Капітальний ремонт дороги «Стрілки-Мшанець».",
+
+					subtitle1TranslateMaydan:"«Вася, давай весло!»",
+					parag1TranslateMaydan:"Дорога зі Стрілок до Мшанця С141704 простягається на 18 км і сполучає 11 прикордонних сіл: Гвоздець, Головецько, Бабину, Виців, Грозьову, Ріп’яну, Дністрик, Смеречку, Плоске, Мшанець і Галівку. Впродовж кількадесят років вона перебувала в аварійному стані, що спричинило економічний занепад краю та соціальну катастрофу. На початку 2018 року мшанецький священик УГКЦ завіз колективне звернення ініціативної групи з підписами місцевих жителів у Київ до мажоритарного народного депутата, паралельно залишивши скарги на обласній та урядовій гарячих лініях. Та результату це не дало.  Тож 17 червня 2018 року священик з місцевими дітьми випустили сатиричний музичний кліп «Вася, давай весло! Як школярі додому плавають…» про те, як, повертаючись додому, учні змушені перепливати величезну калабаню на дорозі. Через день приїхали журналісти телеканалів «1+1» і «НТА» та зняли власні сюжети про стан дороги. Результат: влітку відремонтували 1 км дороги.",
+
+					subtitle2TranslateMaydan:"«Казка на дорозі»",
+					parag2TranslateMaydan:"2019-й рік почався гаряче — президентські вибори. 20 березня побачила світ пародія на мегапопулярний тоді хіт «Плакала» гурту «Казка» — «Плакала: Казка на дорозі», яка стала інформаційною «бомбою», справжньою сенсацією, набравши поза 3 млн переглядів у всіх соцмережах. «Швидка допомога», яка запізно приїжджає, «Пожежна», що намертво грузне за пів кілометра до місця пожежі, «Хлібна», яка перевертається з товаром у кювет, «Автодор», який латає ями багном з річки — не авторська видумка, а поетично оспівані реалії буття у цих селах… «Тут плакали усі…»  Згадка у пісні поіменно всіх чиновників, починаючи з місцевих та закінчуючи тодішнім Президентом України Петром Порошенком спричинила шквал журналістської уваги. У Мшанець приїхали знімальні групи всіх національних та львівських телеканалів.  Разом з кліпом була запущена кампанія збору підписів на дві електронні петиції про «Капітальний ремонт автомобільної дороги Стрілки-Мшанець С141704» — до Кабінету Міністрів України і Львівської обласної ради.  Результат: тогочасний прем’єр-міністр України Володимир Гройсман у прямому етері просив почекати, поки уряд добереться до сільських доріг.",
+
+					subtitle3TranslateMaydan:"«З чого починається дорога?»",
+					parag3TranslateMaydan:"Вибори пройшли бурхливо, новим Президентом України став Володимир Зеленський, який призначив і нового очільника Львівської області. Та ситуація з дорогою залишалася така ж, зусилля ініціативної групи потрапити на прийом до голови ЛОДА були намарними.  «З чого починається дорога?» — це черговий ролик дітей і священика, що привертає увагу до ще однієї біди — жахливої роботи грейдерів, які «розрівнюють» дорогу, нагортаючи великі горби глини перед кюветом, що унеможливлює стікання води з дороги. Таку «роботу» часто виконували напідпитку, з припіднятою лопатою, що лиш злегка «пригладжувала» поверхню дороги…  Але, не зважаючи на всеукраїнський резонанс та минулорічні обіцянки чиновників різного рівня, на капітальний ремонт дороги Стрілки-Мшанець у 2019 році виділили 0 грн 0 коп. Це спричинило справедливе обурення жителів сіл, тож 29 вересня вони за закликом мшанецького священика УГКЦ та ініціативної групи вийшли на першу мирну акцію протесту на трасі міжнародного значення Львів-Ужгород у селі Лопушанка-Хомина. Акція тривала безперервно 3 дні. Результат: розпочався процес виготовлення проектно-кошторисної документації на 13 км даної дороги.",
+
+					subtitle4TranslateMaydan:"«Карантин forever»",
+					parag4TranslateMaydan:"14 лютого 2020 року Президент України запустив амбіційну програму «Велике будівництво: зшити країну». Та в той же день львівські чиновники повідомили ініціативну групу, що ця програма — не для наших сіл і не для дороги Стрілки-Мшанець, яка відповідала всім її критеріям: з’єднувала половину сіл Стрілківської територіальної громади з опорною лікарнею, школою, центром громади тощо. Безрезультатними виявилися піврічні спроби потрапити на прийом до нового очільника Львівської області: всі офіційні шляхи для ініціативної групи були закритими…  «В Карпатах весна — позеленіло, та далі буксує нашеє діло…» — крик відчаю із кліпу «Карантин forever». 2020-й — рік небачених досі карантинних обмежень у всьому світі. Та в наших селах ці обмеження жодним чином не відчулися, де-факто «карантин» тут тривав кількадесят років: коли дощ — по дорозі плавали, а в сонячну погоду — задихалися від пилюки, можливість пересування дуже й дуже обмежена… Тоді ж діти у Галівці зняли реальне відео, як вони посадили бульбу на дорозі (урожай зібрали через пару місяців, коли доспіла). Результат: обіцянка чиновників відремонтувати перші 4 км дороги виявилася пустослівною, затвердження проектно-кошторисної документації на 13 км дороги перенесли на кінець грудня 2020 року, що означало неможливість проведення будь-якого ремонту в цьому році…",
+
+					subtitle5TranslateMaydan:"«Дороги немає… Дороги НАЗАД немає…»",
+					parag5TranslateMaydan:"У 2020-му році на ремонти доріг у Львівській області з різних джерел виділили рекордні 5 млрд 122 млн гривень, що, наприклад, у 2,5 рази більше, ніж у 2018-му році. На покриття одним шаром асфальту 17 км дороги Стрілки-Мшанець потрібно було 148 млн гривень (2,9 % від загальної суми). Однак відповіді ініціативній групі були ідентичними, як і в попередні роки: «Коштів немає, почекайте до наступного року». У червні громада зрозуміла, що затвердження проектно-кошторисної документації (ПКД), яка була вже де-факто готовою, навмисне затримують до кінця року, щоб не розпочинати ремонт. Оскільки всі інші засоби були використані, залишалася остання можливість — друга мирна акція протесту, що розпочалася 17 червня і (без врахування вихідних) безперервно тривала 4 дні. Результат: затвердили ПКД, але коштів виділили на ремонт… 600 метрів дороги! ",
+
+					subtitle6TranslateMaydan:"«Воїни світла»",
+					parag6TranslateMaydan:"13 липня на трасі Львів-Ужгород у Стрілках розпочалася остання акція протесту, що безперервно тривала 5 днів. Тоді ж священик УГКЦ і 3 парафіянки із Мшанця — Ганна Гудз, Оксана Паращак і Надія Яворська — оголосили акцію голодування до вирішення питання (голодували неповні 4 доби). «Воїни добра, воїни світла — люди у селі хочуть гідно жити!» — слова із музичного відео-звернення до Президента України, яке стало неофіційним гімном «Акції гідності на дорозі» або ж «Бойківського майдану»... Розворот очільника області призвів до найгострішої фази конфлікту: зникнення поліцейських, які згідно закону охороняли мирну акцію протесту, і заміна їх перебраними, повістки активістам в суд, «тітушки» і заслані провокатори, наїзди на мітингувальників на пішохідному переході, намагання «стикнути» між собою учасників акції та водіїв, блокування дороги вантажівками, підбурювання до бійок — ці та інші провокації жителі сіл достойно витримали, не давши жодної причини для силового розгону акції. Підтримка української і світової громадськості, що спостерігала події у прямому етері, який вели хлопці-школярі у Фейсбуці, зрештою спонукала владу підписати Меморандум із громадою та виділити необхідні кошти. Результат: підписаний Меморандум, проведений тендер, виділені кошти на ремонт дороги Стрілки-Мшанець. ",
+
+					subtitle7TranslateMaydan:"«Бойківський майдан» — підсумки",
+					parag7TranslateMaydan:"У 2020-му році — половина дороги Стрілки-Мшанець була покрита асфальтом, а вже у 2021-му — майже вся дорога застелена одношаровим асфальтовим покриттям. Прокладання другого шару асфальту перервало повномасштабне вторгнення росії 24 лютого 2022 року.  Дуже багато часу чиновники згаяли, шукаючи «а хто ж за ними стоїть». Не вірили в те, що селяни можуть самі зорганізуватися, що є суб’єктами, а не немічними маріонетками у вправних руках «вищих чинів». Не вірили в силу громади і цінності громадянського суспільства… Шукали компромат на ініціаторів… Чи може бути кращий висновок, аніж слова Захара Беркута із однойменної повісті Івана Франка, написані ще у далекому 1882-му році? «Чим ми побідили? … Ми побідили нашим громадським ладом, нашою згодою і дружністю. Уважайте добре на се! Доки будете жити в громадськім порядку, дружно держатися купи, незломно стояти всі за одного, а один за всіх, доти ніяка ворожа сила не побідить вас».  Дорога Стрілки-Мшанець тому підтвердження.",
+				
 				},
 			},
 			Eng: {
@@ -257,6 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					NavRoutes: "Routes",
 					NavRoute1: "Route 1",
 					NavRoute2: "Route 2",
+					NavRoute3: "Route 3",
 					blackLetter: "BoykoMandry:",
 					greenLetter: "green tourism",
 					SubHireRoutes:
@@ -271,6 +304,10 @@ document.addEventListener("DOMContentLoaded", function () {
 					Ture: "Tourier",
 					Nedilna: "Nedilna",
 					Topilnitsa: "Topilnitsa",
+					Gvozdec:"Gvozdec",
+					Golovetsko:"Golovetsko",
+					Babina:"Babina",
+					Magura:"m. Magura",
 					text: "Station",
 					subtitle1translate: "Church of St. Paraskevi (Serbian)",
 					parag1Translate:
@@ -327,6 +364,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 					subtitle8TranslateHeroes:"Red-books berry poisonous in Nedilna",
 					parag8TranslateHeroes:"All parts of this tree - bark, leaves and even wood - are poisonous to humans.They contain a large number of taxi, a substance that is poisonous for humans and some animals.Previously, wooden beams were deliberately made in the houses on the ceiling of the Yajidgo Tisza.So the house was protected from infections.Due to mass felling for expensive furniture, this tree is now rare and has been preserved only in the mountainous regions of our country - the Carpathians and Crimea.In ancient times, thousands of use as a reliable way to kill the opponent.Beverages were made of wood.After drinking such a bowl of wine, the person quickly died.People also believed that the crown of this tree is very dangerous.It was believed that you could not sleep under Tis, because you will never wake up again.However, over time, it was proven that it was not.A deadly dose for humans is to eat 100 g of fresh needles.Also, in no case can you try beautiful red berries that grow on a tree.However, deer and hares eat bark and needles freely without sacrificing their health.Interestingly, the older the tree, the more it is poisonous.And he lives for a long time - even up to 3000 years!Well, visit the rippiece (yard) where it grows, and ask the local gadgets, how they live under this rare poisonous tree with healing properties 🙂 And to miss - save its coordinates: 49.316899, 23.103886",
+				
+					descriptionForstationPhotoTranslate:"83-year-old Jacob clerk. June 19 2020",
+
+					descriptionForstationPhotoTranslate2:"The action of the priest's hunger strike and the parishioners of the Greek Catholic community of the village of Mshanets to repair the road. July 14-17 2020.",
+					
+					descriptionForstationPhotoTranslate3:"Overhaul of the Strilky-Mashanets Road.",
+
+					subtitle1TranslateMaydan:"'Vasya, let's paddle!'",
+					parag1TranslateMaydan:"The road from the arrows to Mshanets C141704 extends for 18 km and connects 11 border villages: carpenter, Golovetsko, Babina, Victs, Grozov, Ripyan, Dnistrik, Smever, Ploskke, Mshanets and Galivka. For several years, it has been in a state of disrepair, which caused the economic decline of the region and a social disaster. At the beginning of 2018, the UGCC Mshanetsky priest made a collective appeal of the initiative group with the signatures of the locals to Kiev to the majority People's Deputy, leaving complaints on the regional and government hotlines in parallel. But this did not give the result. So on June 17, 2018, a priest with local children released a satirical music video 'Vasya, give a paddle! As students swim home ... ”about how, when they return home, the students are forced to swim a huge calabany on the road. A day later, journalists of TV channels '1+1' and 'NTA' came and filmed their own stories about the condition of the road. Result: 1 km of road was repaired in summer.",
+
+					subtitle2TranslateMaydan:"“Fairy Tale on the Road”",
+					parag2TranslateMaydan:"The 2019 year began hot-presidential elections. On March 20, a parody on the mega -popular hit 'Cry' 'Tale' - 'Crying: A Fairy Tale on the Road', which became an information 'bomb', a real sensation, gaining outside 3 million views on all social networks. An ambulance that comes late, a firefighter, which is tight for half a kilometer to the place of fire, 'Bread', which turns with a product into a ditch, 'Avtodor', which patch the patch of a bog from the river - not author's fictional, but but Poetically sung the realities of being in these villages ... 'Everyone was crying here ...' The mention of all officials in the song by name, starting with the local and ending with the then President of Ukraine Petro Poroshenko, caused a flurry of journalistic attention. The shooting groups of all national and Lviv TV channels came to Mshanets. Together with the video, a campaign of signatures on two electronic petitions was launched on 'Overhaul of the Road of Arrow-Masanets C141704'-to the Cabinet of Ministers of Ukraine and the Lviv Regional Council. Result: At that time Prime Minister of Ukraine Volodymyr Groysman in a direct ether asked to wait for the government to get to rural roads.",
+
+					subtitle3TranslateMaydan:"'Where does the road begin?'",
+					parag3TranslateMaydan:"The elections were violently, the new President of Ukraine was Volodymyr Zelenskyy, who appointed a new head of Lviv region. But the situation with the road remained the same, the efforts of the initiative group to get to the reception to the head of the LODA were in vain. 'Where does the road begin?' - This is another video of children and a priest who draws attention to another misery - the horrific work of the graders who 'level' the road, turning the large humps of clay in front of the cuvette, which makes it impossible to drain water from the road. Such 'work' was often performed with a drink, with a raised shovel, which only slightly 'smoothed' the surface of the road ... But despite the All-Ukrainian resonance and last year's promises of officials of different levels, the overhaul . This led to a fair indignation of the villagers, so on September 29, at the call of the Mshanets priest of the UGCC and the initiative group, they reached the first peaceful protest action on the Lviv-Uzhgorod international importance in the village of Lopushanka-Khomin. The action lasted continuously for 3 days. Result: The process of making design estimates for 13 km of this road has begun.",
+
+					subtitle4TranslateMaydan:"“Quarantine Forever”",
+					parag4TranslateMaydan:"On February 14, 2020, the President of Ukraine launched the ambitious program 'Great Construction: Sew the Country'. But on the same day, Lviv officials reported an initiative group that this program was not for our villages and not for the road of the Mashanets arrow, which meet all its criteria: connected half of the villages of the Arrows Territorial Community with a support hospital, school, community center, etc. . Six -year -old attempts to get to the new head of the Lviv region were unsuccessful: all the official ways for the initiative group were closed ... 2020-the year of unprecedented quarantine restrictions around the world. But in our villages, these restrictions were in no way felt, de facto 'quarantine' lasted several years here: when the rain-on the road floated, and in sunny weather-panting from dust, the possibility of movement is very, very limited ... then children in Galivka They made a real video how they planted the potatoes on the road (the harvest was harvested in a couple of months when it was rushed). The result: the promise of officials to repair the first 4 km of the road was Pustosylivna, the approval of the design and estimate documentation for 13 km of the road was postponed at the end of December 2020, which meant the impossibility of carrying out any repair this year ...",
+
+					subtitle5TranslateMaydan:"'There are no roads ... there's no way back ...'",
+					parag5TranslateMaydan:"In 2020, 5 billion 122 million hryvnias were allocated from various sources from various sources from various sources, which, for example, 2.5 times more than in 2018. One layer of asphalt 17 km of the Mashanets Arrow-Road required UAH 148 million (2.9 % of the total). However, the responses were identical to the initiative group, as in the previous years: 'There is no money, wait until next year.' In June, the community realized that the approval of design estimates (PKD), which was already de facto ready, was deliberately delayed until the end of the year, so as not to start repair. As all other means were used, the last opportunity remained - the second peaceful protest action, which began on June 17 and (excluding the weekend) continuously lasted 4 days. The result: approved PKD, but was allocated for repair ... 600 meters of road!",
+
+					subtitle6TranslateMaydan:"“Light Warriors”",
+					parag6TranslateMaydan:"On July 13, the last protest action began on the Lviv-Uzhgorod highway, which lasted 5 days continuously. At the same time, the priest of the UGCC and 3 parishioners from Mshanets - Anna Gudz, Oksana Parashchak and Nadiya Yavorsk - declared a hunger strike to resolve the issue (starved in less than 4 days). 'Warriors of good, light warriors - people in the village want to live with dignity!' -Words from a music video to the President of Ukraine, which became the unofficial anthem of 'Dignity on the Road' or 'Boykovsky Maidan' ... The reversal of the head of the region led to the most acute phase of conflict: the disappearance of police, who, under the law, guarded a peaceful protest action, and replacing them with the moved, the activists of the activists, 'aunts' and exiled provocateurs, raids on protesters at the pedestrian crossing, trying to 'join' the participants of the action and drivers, block the road with trucks, incite the fights - these and other provocations They withstood, not giving any reason for the force of force of the action. The support of the Ukrainian and world public, which observed the events in the direct ether, which was led by the schools on Facebook, eventually prompted the authorities to sign a memorandum with the community and allocate the necessary funds. Result: signed memorandum, tender, allocated funds for repair of the Mashanets arrow road.",
+
+					subtitle7TranslateMaydan:"'Boykovsky Maidan' - results",
+					parag7TranslateMaydan:"In 2020, half of the Mashanets arrow road was covered with asphalt, and already in 2021-almost all the road was covered with a single-layer asphalt coating. Laying the second layer of asphalt interrupted a full -scale invasion of Russia on February 24, 2022. Officials have lost a lot of time, looking for 'and who is behind them.'They did not believe that the peasants could organize themselves, which are subjects, not infirm puppets in the skilled hands of 'higher ranks'. They did not believe in the community and values ​​of civil society ... were looking for a compromise on the initiators ... Can there be a better conclusion than the words of Zakhar Berkut from the story of Ivan Franko, written in 1882? “What did we get over? … We have been overwhelmed by our public order, our consent and friendliness. Consider well! As long as you live in a public order, to keep the heap together, it is indiscriminate to stand for one for one, and one for all, until no hostile power will be overlooked.' Road arrow-scales so confirmation.",
+				
 				},
 			},
 			Pol: {
@@ -401,6 +466,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					NavRoutes: "Trasy",
 					NavRoute1: "Trasa 1",
 					NavRoute2: "Trasa 2",
+					NavRoute3: "Trasa 3",
 					blackLetter: "BojkoMandry:",
 					greenLetter: "zielona turystyka",
 					SubHireRoutes:
@@ -415,6 +481,10 @@ document.addEventListener("DOMContentLoaded", function () {
 					Ture: "Touriera",
 					Nedilna: "Niedziela",
 					Topilnitsa: "Topilnica",
+					Gvozdec:"Gwóźdeź",
+					Golovetsko:"Golovetsko",
+					Babina:"Babina",
+					Magura:"g. Magura",
 					text: "Przystanek",
 					subtitle1translate: "Kościół św. Paraskevi (serbski)",
 					parag1Translate:
@@ -472,6 +542,33 @@ document.addEventListener("DOMContentLoaded", function () {
 					subtitle8TranslateHeroes:"Czerwone -książki jagodowe trujące w niedzielę",
 					parag8TranslateHeroes:"Wszystkie części tego drzewa - kora, liście, a nawet drewno - są trujące dla ludzi. Zawierają dużą liczbę taksówek, substancję, która jest trująca dla ludzi i niektórych zwierząt. Wcześniej drewniane wiązki zostały celowo wykonane w domach na suficie Yajadgo Tisza. Tak więc dom był chroniony przed infekcjami. Ze względu na masowe ścinanie drogich mebli, drzewo to jest teraz rzadkie i zostało zachowane tylko w górzystnych regionach naszego kraju - Carpatian i Krym. W czasach starożytnych tysiące użycia jako niezawodny sposób zabicia przeciwnika. Napoje zostały wykonane z drewna. Po wypiciu takiej miski wina osoba szybko umarła. Ludzie uważali również, że korona tego drzewa jest bardzo niebezpieczna. Uważano, że nie możesz spać pod TIS, ponieważ nigdy więcej się nie obudzisz. Jednak z czasem udowodniono, że tak nie było. Śmiertelna dawka dla ludzi jest zjedzenie 100 g świeżych igieł. Ponadto w żadnym wypadku nie możesz wypróbować pięknych czerwonych jagód, które rosną na drzewie. Jednak jelenie i zające jedzą kora i igły swobodnie, nie poświęcając zdrowia. Co ciekawe, im starsze drzewo, tym bardziej jest trujące. I żyje przez długi czas - nawet do 3000 lat! Cóż, odwiedź Rippece (podwórko), w którym rośnie, i zapytaj lokalne gadżety, jak żyją pod tym rzadkim trującym drzewem z właściwościami leczniczymi 🙂 i przegapić - zapisz współrzędne: 49.316899, 23.103886",
 
+					descriptionForstationPhotoTranslate:"83-letni Jacob Clerk. 19 czerwca 2020",
+
+					descriptionForstationPhotoTranslate2:"Działanie strajku głodu kapłana i parafian greckiej katolickiej społeczności wioski Mshanets w celu naprawy drogi. 14-17 lipca 2020.",
+					
+					descriptionForstationPhotoTranslate3:"Remont drogi Strilky-Mshanets.",
+
+					subtitle1TranslateMaydan:"„Vasya, wiosłujmy!”",
+					parag1TranslateMaydan:"Droga od strzał do Mshanets C141704 rozciąga się na 18 km i łączy 11 wiosek granicznych: Carpenter, Golovetsko, Babina, Victs, Grozov, Ripyan, Dnistrik, Smever, Ploskke, Mshanets i Galivka. Przez kilka lat jest w stanie niepokoju, co spowodowało spadek gospodarki regionu i katastrofę społeczną. Na początku 2018 r. Kapłan Mshanetsky UGCC zbiorowy odwołał się od grupy inicjatywnej z podpisami mieszkańców do Kijowa do zastępcy większości ludzi, pozostawiając równolegle skarg na regionalne i rządowe linie. Ale to nie dało rezultatu. Tak więc 17 czerwca 2018 r. Kapłan z lokalnymi dziećmi wydał satyryczny teledysk „Vasya, daj wiosło! Gdy uczniowie pływają do domu ... ”O tym, jak wracają do domu, uczniowie są zmuszeni pływać wielką kalabany na drodze. Dzień później przybyli dziennikarze kanałów telewizyjnych „1+1” i „NTA” i nakręcili własne historie o stanie drogi. Wynik: 1 km drogi zostało naprawione latem.",
+
+					subtitle2TranslateMaydan:"„Opowieść o drodze”",
+					parag2TranslateMaydan:"Rok 2019 rozpoczął się w wyborach gorących prezydenckich. 20 marca parodia mega -przypadkowego hitu „Cry” „Tale” - „Crying: A Fairy Tale on the Road”, która stała się informacją „bomba”, prawdziwą sensacją, zdobywając 3 miliony wyświetleń na wszystkie społeczne Sieci. Karetka, która się spóźnia, strażak, który jest ciasny przez pół kilometra do miejsca ognia, „chleb”, który zamienia się z produktem w rowu, „Avtodor”, który zatrzymuje łatkę torfowiska z rzeki - Nie fikcyjny autora, ale poetycko śpiewał rzeczywistość bycia w tych wioskach ... „Wszyscy płakali tutaj ...” Petro Poroshenko spowodował powiększenie dziennikarskiej uwagi. Grupy strzelania wszystkich kanałów telewizyjnych krajowych i LVIV przybyły do ​​Mshanets. Wraz z filmem rozpoczęto kampanię podpisów na dwóch elektronicznych petycjach po „Przeglądu drogi Arrow-Masanets C141704”-do gabinetu ministrów Ukrainy i Rady Regionalnej LVIV. Rezultat: W tym czasie premier Ukrainy VolodyMyr Groymana w bezpośrednim eterze poprosił o poczekanie, aż rząd dotrze na wiejskie drogi.",
+
+					subtitle3TranslateMaydan:"„Gdzie zaczyna się droga?”",
+					parag3TranslateMaydan:"Wybory były gwałtownie, nowym prezydentem Ukrainy był WolodyMyr Zelenskyy, który mianował nowego szefa regionu LVIV. Ale sytuacja z drogą pozostała taka sama, wysiłki grupy inicjatywnej, aby dotrzeć do przyjęcia do szefa Lody, były na próżno. „Gdzie zaczyna się droga?” - To kolejny film dzieci i kapłana, który zwraca uwagę na kolejną nędzę - przerażające dzieło równiarki, którzy „wyrównują” drogę, obracając duże garby gliny przed kuwetą, co uniemożliwia sprywanie wody z droga. Taka „praca” była często wykonywana z pijaną łopatą, która tylko nieco „wygładziła” powierzchnię drogi ... ale pomimo rezonansu w całości i ubiegłego roku i zeszłorocznych obietnic na różnych poziomach, przegląd. Doprowadziło to do uczciwego oburzenia wieśniaków, więc 29 września, na wezwanie Mshanets Priest of the UGCC i grupy inicjatywnej, osiągnęli pierwszą pokojową akcję protestacyjną na międzynarodowym znaczeniu Lviv-Uzhgorod w wiosce Lopushanki- Khomin. Akcja trwała ciągle przez 3 dni. Wynik: Proces dokonywania szacunków projektowych na 13 km tej drogi rozpoczął się.",
+
+					subtitle4TranslateMaydan:"„Kwarantanna na zawsze”",
+					parag4TranslateMaydan:"14 lutego 2020 r. Prezes Ukrainy uruchomił ambitny program „Great Construction: Sew the Country”. Ale tego samego dnia urzędnicy LVIV zgłosili grupę inicjatyw, że program ten nie był dla naszych wiosek, a nie na drodze Mashanets Arrow, która spełnia wszystkie jego kryteria: połączona połowa wiosek społeczności terytorialnej ze szpitalem wsparcia , szkoła, centrum kultury itp. Sześć lat -wolne próby dotarcia do nowego szefa regionu LVIV nie powiodło się: wszystkie oficjalne sposoby grupy inicjatyw zostały zamknięte ... 2020-Rok bezprecedensowych ograniczeń kwarantanny na całym świecie. Ale w naszych wioskach ograniczenia te nie były w żaden sposób odczuwalne, de facto „kwarantanna” trwała tutaj kilka lat: kiedy deszcz na drodze unosiła się, a podczas słonecznego pantingu pogody z pyłu jest bardzo ograniczona bardzo ograniczona. ... Potem dzieci na Galivce zrobiły prawdziwe wideo, w jaki sposób zasadzili ziemniaki na drodze (żniwa zebrano za kilka miesięcy, kiedy zostały przewiezione). Rezultat: Obietnica naprawy pierwszych 4 km drogi była Pustosylivna, zatwierdzenie dokumentacji projektowej i szacunkowej na 13 km drogi zostało przełożone pod koniec grudnia 2020 r., Co oznaczało niemożność wykonania jakiegokolwiek Napraw w tym roku ...",
+
+					subtitle5TranslateMaydan:"„Nie ma dróg… nie ma drogi do tyłu ...”",
+					parag5TranslateMaydan:"W 2020 r. 5 miliardów 122 milionów hrywnii zostało przydzielonych z różnych źródeł z różnych źródeł z różnych źródeł, które na przykład 2,5 razy więcej niż w 2018 r. Jedna warstwa asfaltu 17 km strzałki Mashanets wymagała UAH 148 milionów (2,9 % całości). Jednak odpowiedzi były identyczne z grupą inicjatyw, jak w poprzednich latach: „Nie ma pieniędzy, poczekaj do przyszłego roku”. W czerwcu społeczność zdała sobie sprawę, że zatwierdzenie szacunków projektowych (PKD), które było już de facto gotowe, zostało celowo opóźnione do końca roku, aby nie rozpocząć naprawy. Ponieważ wykorzystano wszystkie inne środki, pozostała ostatnia okazja - druga pokojowa akcja protestacyjna, która rozpoczęła się 17 czerwca i (z wyłączeniem weekendu) trwała stale 4 dni. Wynik: zatwierdzony PKD, ale został przydzielony do naprawy ... 600 metrów drogi!",
+
+					subtitle6TranslateMaydan:"„Light Warriors”",
+					parag6TranslateMaydan:"13 lipca rozpoczęła się ostatnia akcja protestacyjna na autostradzie Lviv-Uzhgorod, która trwała 5 dni w sposób ciągły. W tym samym czasie kapłan UGCC i 3 parafian z Mshanets - Anna Gudz, Oksana Parashchak i Nadiya Yavorsk - ogłosił strajk głodowy, aby rozwiązać problem (zagłębił się w mniej niż 4 dni). „Wojownicy dobrych, lekkich wojowników - ludzie w wiosce chcą żyć z godnością!” -Słowa z teledysku do prezydenta Ukrainy, który stał się nieoficjalnym hymnem „godności na drodze” lub „Boykovsky Maidan” ... odwrócenie głowy regionu doprowadziło do najbardziej ostrego fazy konfliktu: Zniknięcie policji, która zgodnie z prawem strzegła spokojnej akcji protestacyjnej i zastępując ich przeprowadzką, działacze działaczy, „ciotki” i wygnanych prowokatorów, nalotów na protestujących na skrzyżowaniu pieszym, próbując „dołączyć” Uczestnicy akcji i kierowców, blokują drogę ciężarówkami, pobudzają walki - te i inne prowokacje, które wytrzymali, nie podając żadnego powodu siły siły akcji. Wsparcie ukraińskiego i światowego społeczeństwa, które zaobserwowało wydarzenia w Direct Ether, które były prowadzone przez szkoły na Facebooku, ostatecznie skłoniło władze do podpisania memorandum ze społecznością i przydzielenia niezbędnych środków. Wynik: Podpisane memorandum, przetarg, przydzielone fundusze na naprawę Mashanets Strilky Road.",
+
+					subtitle7TranslateMaydan:"Boykovsky Maidan - wyniki",
+					parag7TranslateMaydan:"W 2020 r. Połowa Mashanets Arrow Road była pokryta asfaltem, a już w 2021 r.-prawie cała droga była pokryta jedną warstwową powłoką asfaltową. Położenie drugiej warstwy asfaltu przerwał pełną inwazję na skalę Rosji 24 lutego 2022 r. Urzędnicy stracili dużo czasu, szukając „i kto jest za nimi”. Nie wierzyli, że chłopi mogą się zorganizować, które są poddanymi, a nie chory na marionetki w wykwalifikowanych rękach „wyższych szeregów”. Nie wierzyli w społeczność i wartości społeczeństwa obywatelskiego ... szukali kompromisu inicjatorów ... czy może być lepszy wniosek niż słowa Zakhara Berkut z historii Ivana Franko, napisanego w 1882 roku ? „Co dostaliśmy? … Zostaliśmy przytłoczeni naszym porządkiem publicznym, naszą zgodą i życzliwością. Rozważ dobrze! Tak długo, jak żyjesz w porządku publicznym, aby utrzymać stertę, nie jest to nieokreślone, aby zająć jeden, a jeden dla wszystkich, dopóki nie zostanie przeoczona wrogie moc. ” Skale strzałek drogowych, więc potwierdzenie.",
+				
 				},
 			},
 		},
@@ -716,6 +813,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		NavRoute1Element.forEach(function (NavRoute2) {
 			NavRoute2.textContent = i18next.t("NavRoute2");
 		});
+		
+		var NavRoute1Element = document.querySelectorAll(".NavRoute3");
+		NavRoute1Element.forEach(function (NavRoute3) {
+			NavRoute3.textContent = i18next.t("NavRoute3");
+		});
 
 		var blackLetterElement = document.querySelectorAll(".blackLetter");
 		blackLetterElement.forEach(function (blackLetter) {
@@ -794,6 +896,26 @@ document.addEventListener("DOMContentLoaded", function () {
 		var TopilnitsaElement = document.querySelectorAll(".Topilnitsa");
 		TopilnitsaElement.forEach(function (Topilnitsa) {
 			Topilnitsa.textContent = i18next.t("Topilnitsa");
+		});
+
+		var GvozdecElement = document.querySelectorAll(".Gvozdec");
+		GvozdecElement.forEach(function (Gvozdec) {
+			Gvozdec.textContent = i18next.t("Gvozdec");
+		});
+
+		var GolovetskoElement = document.querySelectorAll(".Golovetsko");
+		GolovetskoElement.forEach(function (Golovetsko) {
+			Golovetsko.textContent = i18next.t("Golovetsko");
+		});
+
+		var BabinaElement = document.querySelectorAll(".Babina");
+		BabinaElement.forEach(function (Babina) {
+			Babina.textContent = i18next.t("Babina");
+		});
+
+		var MaguraElement = document.querySelectorAll(".Magura");
+		MaguraElement.forEach(function (Magura) {
+			Magura.textContent = i18next.t("Magura");
 		});
 
 		var textElement = document.querySelectorAll(".text");
@@ -994,6 +1116,86 @@ document.addEventListener("DOMContentLoaded", function () {
 		var parag8TranslateElementHeroes = document.querySelectorAll(".parag8TranslateHeroes");
 		parag8TranslateElementHeroes.forEach(function (parag8TranslateHeroes) {
 			parag8TranslateHeroes.textContent = i18next.t("parag8TranslateHeroes");
+		});
+		
+		var descriptionForstationPhotoTranslate = document.querySelectorAll(".descriptionForstationPhotoTranslate");
+		descriptionForstationPhotoTranslate.forEach(function (descriptionForstationPhotoTranslate) {
+			descriptionForstationPhotoTranslate.textContent = i18next.t("descriptionForstationPhotoTranslate");
+		});
+
+		var descriptionForstationPhotoTranslate2 = document.querySelectorAll(".descriptionForstationPhotoTranslate2");
+		descriptionForstationPhotoTranslate2.forEach(function (descriptionForstationPhotoTranslate2) {
+			descriptionForstationPhotoTranslate2.textContent = i18next.t("descriptionForstationPhotoTranslate2");
+		});
+
+		var descriptionForstationPhotoTranslate3 = document.querySelectorAll(".descriptionForstationPhotoTranslate3");
+		descriptionForstationPhotoTranslate3.forEach(function (descriptionForstationPhotoTranslate3) {
+			descriptionForstationPhotoTranslate3.textContent = i18next.t("descriptionForstationPhotoTranslate3");
+		});
+
+		var subtitle1translateElementMaydan = document.querySelectorAll(".subtitle1TranslateMaydan");
+		subtitle1translateElementMaydan.forEach(function (subtitle1TranslateMaydan) {
+			subtitle1TranslateMaydan.textContent = i18next.t("subtitle1TranslateMaydan");
+		});
+
+		var parag1TranslateElementMaydan = document.querySelectorAll(".parag1TranslateMaydan");
+		parag1TranslateElementMaydan.forEach(function (parag1TranslateMaydan) {
+			parag1TranslateMaydan.textContent = i18next.t("parag1TranslateMaydan");
+		});
+		
+		var subtitle2translateElementMaydan = document.querySelectorAll(".subtitle2TranslateMaydan");
+		subtitle2translateElementMaydan.forEach(function (subtitle2TranslateMaydan) {
+			subtitle2TranslateMaydan.textContent = i18next.t("subtitle2TranslateMaydan");
+		});
+
+		var parag2TranslateElementMaydan = document.querySelectorAll(".parag2TranslateMaydan");
+		parag2TranslateElementMaydan.forEach(function (parag2TranslateMaydan) {
+			parag2TranslateMaydan.textContent = i18next.t("parag2TranslateMaydan");
+		});
+		var subtitle3translateElementMaydan = document.querySelectorAll(".subtitle3TranslateMaydan");
+		subtitle3translateElementMaydan.forEach(function (subtitle3TranslateMaydan) {
+			subtitle3TranslateMaydan.textContent = i18next.t("subtitle3TranslateMaydan");
+		});
+
+		var parag3TranslateElementMaydan = document.querySelectorAll(".parag3TranslateMaydan");
+		parag3TranslateElementMaydan.forEach(function (parag3TranslateMaydan) {
+			parag3TranslateMaydan.textContent = i18next.t("parag3TranslateMaydan");
+		});
+		var subtitle4translateElementMaydan = document.querySelectorAll(".subtitle4TranslateMaydan");
+		subtitle4translateElementMaydan.forEach(function (subtitle4TranslateMaydan) {
+			subtitle4TranslateMaydan.textContent = i18next.t("subtitle4TranslateMaydan");
+		});
+
+		var parag4TranslateElementMaydan = document.querySelectorAll(".parag4TranslateMaydan");
+		parag4TranslateElementMaydan.forEach(function (parag4TranslateMaydan) {
+			parag4TranslateMaydan.textContent = i18next.t("parag4TranslateMaydan");
+		});
+		var subtitle5translateElementMaydan = document.querySelectorAll(".subtitle5TranslateMaydan");
+		subtitle5translateElementMaydan.forEach(function (subtitle5TranslateMaydan) {
+			subtitle5TranslateMaydan.textContent = i18next.t("subtitle5TranslateMaydan");
+		});
+
+		var parag5TranslateElementMaydan = document.querySelectorAll(".parag5TranslateMaydan");
+		parag5TranslateElementMaydan.forEach(function (parag5TranslateMaydan) {
+			parag5TranslateMaydan.textContent = i18next.t("parag5TranslateMaydan");
+		});
+		var subtitle6translateElementMaydan = document.querySelectorAll(".subtitle6TranslateMaydan");
+		subtitle6translateElementMaydan.forEach(function (subtitle6TranslateMaydan) {
+			subtitle6TranslateMaydan.textContent = i18next.t("subtitle6TranslateMaydan");
+		});
+
+		var parag6TranslateElementMaydan = document.querySelectorAll(".parag6TranslateMaydan");
+		parag6TranslateElementMaydan.forEach(function (parag6TranslateMaydan) {
+			parag6TranslateMaydan.textContent = i18next.t("parag6TranslateMaydan");
+		});
+		var subtitle7translateElementMaydan = document.querySelectorAll(".subtitle7TranslateMaydan");
+		subtitle7translateElementMaydan.forEach(function (subtitle7TranslateMaydan) {
+			subtitle7TranslateMaydan.textContent = i18next.t("subtitle7TranslateMaydan");
+		});
+
+		var parag7TranslateElementMaydan = document.querySelectorAll(".parag7TranslateMaydan");
+		parag7TranslateElementMaydan.forEach(function (parag7TranslateMaydan) {
+			parag7TranslateMaydan.textContent = i18next.t("parag7TranslateMaydan");
 		});
 
 		var titleTranslanteElement = document.querySelector(".titleTranslante");
