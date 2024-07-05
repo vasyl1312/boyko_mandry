@@ -54,11 +54,11 @@ closeButton.addEventListener("click", function () {
 	blockToClose.style.display = "none";
 });
 
-var rotateImage = document.getElementById("rotateImage");
+// var rotateImage = document.getElementById("rotateImage");
 
-rotateImage.addEventListener("click", function () {
-	rotateImage.classList.toggle("rotate");
-});
+// rotateImage.addEventListener("click", function () {
+// 	rotateImage.classList.toggle("rotate");
+// });
 
 // let containerVisible = false;
 // const container = document.getElementById('container');
@@ -128,3 +128,57 @@ rotateImage.addEventListener("click", function () {
 
 // 	containerVisible = !containerVisible;
 // }
+
+function adjustStructure() {
+	const routesContainer = document.getElementById('routes-container');
+	const routes1Line = routesContainer.querySelector('.routes1-line');
+  
+	if (window.innerWidth < 395) {
+	  if (!document.querySelector('.second-line')) {
+		// Create new div for the last part
+		const newDiv = document.createElement('div');
+		newDiv.classList.add('routes1-line', 'second-line');
+  
+		// Move the last elements to the new div
+		const mshanetsImg = routes1Line.querySelector('img:last-of-type');
+		const mshanetsP = routes1Line.querySelector('p.Mshanets');
+		const mshanetsLine = routes1Line.querySelector('div.line:last-of-type');
+  
+		if (mshanetsImg && mshanetsP && mshanetsLine) {
+		  newDiv.appendChild(mshanetsLine.cloneNode());
+		  newDiv.appendChild(mshanetsImg.cloneNode());
+		  newDiv.appendChild(mshanetsP.cloneNode());
+  
+		  routesContainer.appendChild(newDiv);
+  
+		  // Remove the moved elements from the original div
+		  mshanetsImg.remove();
+		  mshanetsP.remove();
+		  mshanetsLine.remove();
+		}
+	  }
+	} else {
+	  // Revert back to the original structure if the screen size is more than 395px
+	  const secondLine = document.querySelector('.second-line');
+	  if (secondLine) {
+		const mshanetsImg = secondLine.querySelector('img');
+		const mshanetsP = secondLine.querySelector('p.Mshanets');
+		const mshanetsLine = secondLine.querySelector('div.line');
+  
+		if (mshanetsImg && mshanetsP && mshanetsLine) {
+		  routes1Line.appendChild(mshanetsLine.cloneNode());
+		  routes1Line.appendChild(mshanetsImg.cloneNode());
+		  routes1Line.appendChild(mshanetsP.cloneNode());
+		}
+  
+		secondLine.remove();
+	  }
+	}
+  }
+  
+  // Initial check
+  adjustStructure();
+  
+  // Add event listener for window resize
+  window.addEventListener('resize', adjustStructure);
+  

@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					route1SubtitleTranslate:
 						"Погойдатись на карпатській гойдалці, смачно поїсти, знайти криївку в церкві і переночувати у справжніх колибах!",
 					routesButton: "Дізнатись більше",
-					levelTranslate2: "для активних",
+					levelTranslate2: "для найактивніших",
 					distanceTranslate2: "25 км",
 					heightTranslate2: "пік — 779 м",
 					route2NumTranslate: "Маршрут 2",
@@ -113,6 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					NavMain: "Головна",
 					NavRoutes: "Маршрути",
 					NavRoute1: "Маршрут 1",
+					NavRoute2: "Маршрут 2",
 					blackLetter: "БойкоМандри:",
 					greenLetter: "зелений туризм",
 					SubHireRoutes:
@@ -121,6 +122,12 @@ document.addEventListener("DOMContentLoaded", function () {
 					Tysovytsia: "Тисовиця",
 					Ploske: "Плоске",
 					Mshanets: "Мшанець",
+					Lopushanka: "Лопушанка-Хомина",
+					Zamkova: "Ясениця-Замкова",
+					Volosanka: "Велика Волосянка",
+					Ture: "Тур’є",
+					Nedilna: "Недільна",
+					Topilnitsa: "Топільниця",
 					text: "Зупинка",
 					subtitle1translate: "Церква Святої прп. Параскевії (Сербської)",
 					parag1Translate:
@@ -225,6 +232,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					NavMain: "Main",
 					NavRoutes: "Routes",
 					NavRoute1: "Route 1",
+					NavRoute2: "Route 2",
 					blackLetter: "BoykoMandry:",
 					greenLetter: "green tourism",
 					SubHireRoutes:
@@ -233,6 +241,12 @@ document.addEventListener("DOMContentLoaded", function () {
 					Tysovytsia: "Tysovytsia",
 					Ploske: "Ploske",
 					Mshanets: "Mshanets",
+					Lopushanka: "Lopushanka-Chominas",
+					Zamkova: "Yasenitsa-Zamkova",
+					Volosanka: "Velika Volosyanka",
+					Ture: "Tourier",
+					Nedilna: "Nedilna",
+					Topilnitsa: "Topilnitsa",
 					text: "Station",
 					subtitle1translate: "Church of St. Paraskevi (Serbian)",
 					parag1Translate:
@@ -337,6 +351,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					NavMain: "Główny",
 					NavRoutes: "Trasy",
 					NavRoute1: "Trasa 1",
+					NavRoute2: "Trasa 2",
 					blackLetter: "BojkoMandry:",
 					greenLetter: "zielona turystyka",
 					SubHireRoutes:
@@ -615,6 +630,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		NavRoute1Element.forEach(function (NavRoute1) {
 			NavRoute1.textContent = i18next.t("NavRoute1");
 		});
+		
+		var NavRoute1Element = document.querySelectorAll(".NavRoute2");
+		NavRoute1Element.forEach(function (NavRoute2) {
+			NavRoute2.textContent = i18next.t("NavRoute2");
+		});
 
 		var blackLetterElement = document.querySelectorAll(".blackLetter");
 		blackLetterElement.forEach(function (blackLetter) {
@@ -663,6 +683,36 @@ document.addEventListener("DOMContentLoaded", function () {
 		var MshanetsElement = document.querySelectorAll(".Mshanets");
 		MshanetsElement.forEach(function (Mshanets) {
 			Mshanets.textContent = i18next.t("Mshanets");
+		});
+
+		var LopushankaElement = document.querySelectorAll(".Lopushanka");
+		LopushankaElement.forEach(function (Lopushanka) {
+			Lopushanka.textContent = i18next.t("Lopushanka");
+		});
+
+		var ZamkovaElement = document.querySelectorAll(".Zamkova");
+		ZamkovaElement.forEach(function (Zamkova) {
+			Zamkova.textContent = i18next.t("Zamkova");
+		});
+
+		var VolosankaElement = document.querySelectorAll(".Volosanka");
+		VolosankaElement.forEach(function (Volosanka) {
+			Volosanka.textContent = i18next.t("Volosanka");
+		});
+
+		var TureElement = document.querySelectorAll(".Ture");
+		TureElement.forEach(function (Ture) {
+			Ture.textContent = i18next.t("Ture");
+		});
+
+		var NedilnaElement = document.querySelectorAll(".Nedilna");
+		NedilnaElement.forEach(function (Nedilna) {
+			Nedilna.textContent = i18next.t("Nedilna");
+		});
+
+		var TopilnitsaElement = document.querySelectorAll(".Topilnitsa");
+		TopilnitsaElement.forEach(function (Topilnitsa) {
+			Topilnitsa.textContent = i18next.t("Topilnitsa");
 		});
 
 		var textElement = document.querySelectorAll(".text");
