@@ -159,6 +159,30 @@ document.addEventListener("DOMContentLoaded", function () {
 					subtitle9translate: "Еко-табір «Мшанецькі Колиби»",
 					parag9Translate:
 						"Це соціальне підприємництво релігійної громади Різдва Пресвятої Богородиці УГКЦ с. Мшанець, засноване у 2019 р. Його метою є соціальний, духовний та економічний розвиток краю шляхом створення успішних та інноваційних проєктів у сфері туризму на основі бойківських традицій та християнських цінностей.Тут ви можете заночувати в оригінальних лісових будиночках або ж у власній палатці, розклавши її на кемпінгу неподалік",
+					subtitle1TranslateHeroes: "Нанашкова хата в Лопушанці-Хоминій",
+					parag1TranslateHeroes:
+						"«Нанашкова хата» — класичний тип бойківської хати. Збудований в 1930 році. Особливістю автентичних будинків цього регіону є поєднання під одним дахом житлових і господарських приміщень. Одразу поруч з житловою кімнатою, коридором, який бойки називають сіньми, стодолою (боїще), розташований хлів (стайня). Є ще комора, загата, курник.",
+					subtitle2TranslateHeroes:"Дзвіниця церкви святого Архистратига Михаїла у Ясениці-Замковій",
+					parag2TranslateHeroes:"Триярусна дзвіниця-каплиця 1730 р. — пам’ятка архітектури національного значення, включена в Державний реєстр культурного надбання (№ 1438/0). Представниця галицької архітектурної школи. Славиться гармонійністю своїх пропорцій. Завершується восьмигранним шатровим верхом.  На першому ярусі дзвіниці була комора, де зберігалося церковне начиння, старі ікони і мед з церковної пасіки. Сьогодні тут облаштований міні-музей народного побуту. На другому поверсі розташовувалася каплиця Покрову Пресвятої Богородиці. Сьогодні тут виставка вишитих ікон та хоругв та інших старовинних речей та церковного приладдя.",
+
+					subtitle3TranslateHeroes:"Церква Св. Василія Великого (Святого Миколи) у Великій Волосянці",
+					parag3TranslateHeroes:"Сучасна будівля церкви Св. Василія зведена у 1903 році за ініціативи пароха о. Альбіна Добрянського на місці старої церкви, перші відомості про яку датуються ще 1577-м роком. Що цікаво, у 1668 році місцевий житель Стас Василькович з дружиною Огафією подарували до церкви книгу Йоаникія Ґалятовського “Ключ Разумінія”, видану у Львові всього за три роки до цього! Звели цю церкву брати-майстри Іван та Василь Васьківи з Долини за проектом легендарного львівського архітектора Василя Нагірного в неоукраїнському стилі.",
+
+					subtitle4TranslateHeroes:"Село Тур’є",
+					parag4TranslateHeroes:"Тур’є — давнє бойківське село, найдовше у Стрілківській громаді (площа 555 га, довжина всіх вулиць — 36 км). Ще в часи Київської Руси тут було військове городище та сторожове поселення, яке захищало прадавній торговий шлях «Руський Путь». У селі збереглися сліди ранньоісторичних валів. Археологи знайшли тут давньоруський меч та інші речі. Перша збережена письмова згадка про село датується, за одними даними, 1345 роком, за іншими — 1473.",
+
+					subtitle5TranslateHeroes:"Церква Святого Миколи села Тур’є (Долішня) 1690 року",
+					parag5TranslateHeroes:"Це найстаріша церква Стрілківської громади, зведена ще у 1690 році. У селі існує легенда про будову цієї церкви: «Пан не дозволяв на цьому пляці збудувати церкву, тому люди таємно в лісі підготували все, і коли настала слушна мить (пан поїхав з села у справах), селяни за ніч все перенесли і склали церкву». Цю мальовничу церкву неодноразово зображувала на акварелях і лінориті на Різдвяні та Великодні свята українська художниця Олена Кульчицька у 1920-х роках. Під час Другої світової війни церква була пошкоджена, однак вже у 1945 році її відремонтували.",
+
+					subtitle6TranslateHeroes:"Вежа Пам’яті у Недільній",
+					parag6TranslateHeroes:"Це найвища дерев’яна вежа-дзвіниця України та Європи, висота якої складає 43 метри. Така висота невипадкова — вона символізує пам’ять про 43-х повстанців УПА, що загинули у 1943 році у бою з гітлерівцями. Тут можна вилізти на оглядовий майданчик і вдарити у Дзвін Пам’яті, споглядаючи на безмежні гірські пасма Львівської і Закарпатської областей, за які боролися і віддавали життя молоді хлопці у часі наших Других визвольних змагань. Через рік у 1944-му неподалік у цих лісах відбулася епохальна, без перебільшення, подія для нашої держави — великий з’їзд провідників ОУН, командирів УПА, делеґатів різних партій, що увінчався вибором Української Головної Визвольної Ради — підпільний уряд України, що безпосередньо керував визвольним рухом українців до середини 1950-х років. І це — дивовижна історія усвідомленої єдності українського народу. Чому? Тому що третина обраних делегатів була не з Галичини, а керівником УГВР обрали полтавчанина Кирила Осьмака. Так, бандерівським рухом керував наддніпрянець, який проживав у цих селах!",
+
+					subtitle7TranslateHeroes:"Історико-меморіальний музей Кирила Осьмака, голови УГВР, в Недільній",
+					parag7TranslateHeroes:"Кирило Осьмак (псевдо «Марко Горянський») — український учений, аграрний економіст, учасник Перших та Других визвольних змагань, член Центральної ради, діяч ОУН, голова Української головної визвольної ради (УГВР) — підпільного уряду та парламенту, який керував повстанською армією. УГВР, утворена на установчих зборах 11-15 липня 1944 року на горі Діл у лісі між селами Недільна та Сприня, була надпартійною організацією. Тільки 9 із 25 делегатів, що отримали мандати, були партійцями ОУН(б). Третина делегатів — із Наддніпрянщини, 17 — із Волині й Галичини. Кирило Осьмак з дружиною проживав у селі Недільна та Тур’є Горішнє. Музей Кирила Осьмака заснований у вересні 2014 року у приміщенні Народного дому села Недільна (колишня будівля «Просвіти»). Над розробкою і побудовою експозиції працювала група науковців та музейних фахівців. Музей має два тематичні розділи. Основу експозиції складають архівні документи, фото та інші матеріали, література, подарована Наталею Осьмак, донькою Кирила Осьмака, спогади його сучасників та рідних, зібраних Любою Коваль. Другий розділ складає колекція експонатів, пов’язаних з побутом та життям українців Прикарпаття ХІХ-ХХ ст. (ткацький верстат, стародавні ваги, кав’ярка, ходулі для дітей, вишиванки ХІХ ст., форма вояків УПА та інші цікавинки) та картини художників Івана Остафійчука, Михайла Безпальківа і Тараса Дідули.",
+
+					subtitle8TranslateHeroes:"Червонокнижний Тис ягідний отруйний у Недільній",
+					parag8TranslateHeroes:"Всі частини цього дерева — кора, листя і навіть деревина — є отруйними для людини. Вони у великій кількості містять таксин, речовину яка для людини і деяких тварин є отруйною. Раніше в будинках навмисне робили деревʼяні балки на стелі з ягіднго тису. Так будинок був захищений від інфекцій. Через масову вирубку для дорогих меблів це дерево тепер є рідкісним і збереглось лише у гірських регіонах нашої країни — Карпатах та Криму. У сиву давнину тис використовувася як надійний спосіб вбити суперника. З деревини виготовляли кубок для напоїв. Випивши з такої чаші вина, людина швидко помирала. Також у народі вірили, що крона цього дерева дуже небезпечні. Вважалось, що під тисом не можна спати, бо більше вже ніколи не прокинешся. Проте з часом було доведено, що це не так. Смертельною дозою для людини є вживання у їжу 100 г свіжої хвої. Також у жодному випадку не можна пробувати гарні червоні ягідки, які ростуть на дереві. Проте олені та зайці вільно їдять кору та хвою листя без шкоди для свого здоров’я. Цікаво, що чим старіше дерево, тим воно отруйніше. А живе тис довго — навіть до 3000 років! Що ж, завітайте на обору (подвір’я), де він росте, і розпитайте у місцевих ґаздів, як їм живеться під цим рідкісним отруйним деревом з цілющими властивостями 🙂 А щоб не пропустити — збережіть його координати: 49.316 899, 23.103 886",
+
 				},
 			},
 			Eng: {
@@ -278,6 +302,31 @@ document.addEventListener("DOMContentLoaded", function () {
 					subtitle9translate: "Eco-camp 'Mshanetski Kolyby'",
 					parag9Translate:
 						"It is the social entrepreneurship of the religious community of the Nativity of the Blessed Virgin Mary of the UGCC p.Mshanets, founded in 2019. Its purpose is the social, spiritual and economic development of the region through the creation of successful and innovative tourism -based projects on the basis of Boyko traditions and Christian values. You can spend the night in the original forest houses or in your own chamat camping nearby",
+					
+					subtitle1TranslateHeroes: "Nanashkov's house in Lopushanka-Khominin",
+					parag1TranslateHeroes:
+						"'Nanashkov's house' is a classic type of Boyko's house. Built in 1930. The peculiarity of the authentic buildings of this region is the combination under one roof of residential and outbuildings.Immediately next to the living room, a corridor, which is called shadows, a table (a fight), a barn (stable) is located.There is still a pantry, a squad, a chicken coop.",
+					
+					subtitle2TranslateHeroes:"The bell tower of St. Archangel Michael in Yasenitsa-Zamkova",
+					parag2TranslateHeroes:"A three-tier bell tower-Kaplytsya 1730-a monument of national importance, included in the State Register of Cultural Help (No. 1438/0).Representative of the Galician Architectural School.It is famous for the harmony of its proportions.It ends with an octagonal tent top.On the first tier of the bell tower was a pantry, which stored church utensils, old icons and honey from church apiary.Today there is a mini-museum of folk life.On the second floor was the Chapel of the Intercession of the Blessed Virgin.Today there is an exhibition of embroidered icons and horses and other ancient things and church accessories.",
+
+					subtitle3TranslateHeroes:"The Church of St. Basil the Great (St. Nicholas) in the Velika Volosyanka",
+					parag3TranslateHeroes:"The modern building of the Church of St. Basil was built in 1903 on the initiative of the parish priest Fr.Albina Dobryansky on the site of the old church, the first information of which dates back to 1577.Interestingly, in 1668, a local resident Stas Vasylkovich and his wife Ogafia presented a book by Johniki Galyatovsky to the church 'The Key of Razminia', published in Lviv just three years before!This church was erected by the Master-Master Ivan and Vasyl Vasykiv from the Valley of the legendary Lviv architect Vasyl Nagirny in the neo-Ukrainian style.",
+
+					subtitle4TranslateHeroes:"Turier village",
+					parag4TranslateHeroes:"Turier is the ancient Boyko village, the longest in the Strail community (555 hectares, the length of all streets is 36 km).Even in the times of Kievan Rus there was a military settlement and a guard settlement, which defended the ancient trade route 'Russian path'. Traces of early historical shafts are preserved in the village.Archaeologists have found an ancient Russian sword and other things here.The first preserved written mention of the village is dated, according to some data, 1345, according to others - 1473.",
+
+					subtitle5TranslateHeroes:"St. Nicholas Church of the village of Turier (Dolishnya) in 1690",
+					parag5TranslateHeroes:"It is the oldest church of the Strail Community, built in 1690.In the village there is a legend about the structure of this church: 'The gentleman did not allow the church to build on this point, so people were secretly prepared in the forest, and when the right moment came (the gentleman left the village in business), the peasants were moved and the church was moved at night.'.This picturesque church has been repeatedly depicted on watercolors and linorites for Christmas and Easter holidays Ukrainian artist Elena Kulchytska in the 1920s.During the Second World War, the church was damaged, but in 1945 it was repaired.",
+
+					subtitle6TranslateHeroes:"The memory tower in Nedilna",
+					parag6TranslateHeroes:"It is the highest wooden bell tower of Ukraine and Europe, which is 43 meters.This height is not accidental-it symbolizes the memory of the 43th rebels of the UPA who died in 1943 in battle with the Nazis.Here you can climb the viewing platform and hit the bell in memory, looking at the boundless mountain strands of Lviv and Transcarpathian regions, for which young boys fought and gave their lives during our second liberation competitions.A year later, in 1944, there was an epochal, without exaggeration, event for our country-a great congress of OUN leaders, UPA commanders, delegates of different parties, which was crowned with the choice of the Ukrainian Main Liberation Council-the Underground GovernmentThe liberation movement of Ukrainians until the mid-1950s.And this is a wonderful story of the conscious unity of the Ukrainian people.Why?Because a third of the delegates elected was not from Galicia, but the head of the UHWR elected Poltava Cyril Osmak.Yes, the Bandera movement was managed by the Dnieper, who lived in these villages!",
+
+					subtitle7TranslateHeroes:"Cyril Osmak's Historical and Memorial Museum, UHVR heads, Nedilna",
+					parag7TranslateHeroes:"Cyril Osmak (pseudo 'Marko Goryansky') is a Ukrainian scientist, agricultural economist, participant of the first and second liberation competitions, member of the Central Rada, OUN, head of the Ukrainian General Liberation Council (UHWR) - underground government and parliament, who was in the UPD.The UHWR, formed at the Constituent Assembly on July 11-15, 1944, on the mountain of Dil in the forest between the villages of Sunday and Sprina, was a super-party organization.Only 9 of the 25 delegates who received the Mandates were the OUN parties (b).One third of delegates - from the Dnieper region, 17 - from Volyn and Galicia.Cyril Osmak and his wife lived in the village of Sunday and Turier Gorishne.The Cyril Osmak Museum was founded in September 2014 in the premises of the People's House of the village of Sunday (the former Enlightenment building).A group of scientists and museum specialists worked on the development and construction of the exposition.The museum has two thematic sections.The basis of the exposition is archival documents, photos and other materials, literature donated by Natalia Osmak, daughter of Cyril Osmak, the memories of his contemporaries and relatives, collected by love Koval.The second section is a collection of exhibits related to the life and life of Ukrainians of the Carpathian region of the nineteenth and twentieth centuries.(loom, ancient scales, cafes, stilts for children, nineteenth -century embroidery, form of UPA soldiers and other interests) and paintings.",
+
+					subtitle8TranslateHeroes:"Red-books berry poisonous in Nedilna",
+					parag8TranslateHeroes:"All parts of this tree - bark, leaves and even wood - are poisonous to humans.They contain a large number of taxi, a substance that is poisonous for humans and some animals.Previously, wooden beams were deliberately made in the houses on the ceiling of the Yajidgo Tisza.So the house was protected from infections.Due to mass felling for expensive furniture, this tree is now rare and has been preserved only in the mountainous regions of our country - the Carpathians and Crimea.In ancient times, thousands of use as a reliable way to kill the opponent.Beverages were made of wood.After drinking such a bowl of wine, the person quickly died.People also believed that the crown of this tree is very dangerous.It was believed that you could not sleep under Tis, because you will never wake up again.However, over time, it was proven that it was not.A deadly dose for humans is to eat 100 g of fresh needles.Also, in no case can you try beautiful red berries that grow on a tree.However, deer and hares eat bark and needles freely without sacrificing their health.Interestingly, the older the tree, the more it is poisonous.And he lives for a long time - even up to 3000 years!Well, visit the rippiece (yard) where it grows, and ask the local gadgets, how they live under this rare poisonous tree with healing properties 🙂 And to miss - save its coordinates: 49.316899, 23.103886",
 				},
 			},
 			Pol: {
@@ -360,6 +409,12 @@ document.addEventListener("DOMContentLoaded", function () {
 					Tysovytsia: "Tysowica",
 					Ploske: "Płaski",
 					Mshanets: "Mszanet",
+					Lopushanka: "Łopuszanka-Homina",
+					Zamkova: "Jasenycja-Zamkowa",
+					Volosanka: "Wielka Wołosianka",
+					Ture: "Touriera",
+					Nedilna: "Niedziela",
+					Topilnitsa: "Topilnica",
 					text: "Przystanek",
 					subtitle1translate: "Kościół św. Paraskevi (serbski)",
 					parag1Translate:
@@ -391,6 +446,32 @@ document.addEventListener("DOMContentLoaded", function () {
 					subtitle9translate: "Eko Obóz 'Mszaniecki Kołyby'",
 					parag9Translate:
 						"Jest to społeczna przedsiębiorczość wspólnoty religijnej szopki Błogosławionej Maryi Maryi z UGCC p.MSHANETS, założony w 2019 r. Jego celem jest rozwój społeczny, duchowy i ekonomiczny regionu poprzez tworzenie udanych i innowacyjnych projektów opartych na turystyce na podstawie tradycji Boyko i wartości chrześcijańskiej. Można spędzić noc w oryginalnych domach leśnych lub we własnym charakterze na biwakowaniu w pobliżu",
+				
+					subtitle1TranslateHeroes: "Dom Nanashkova w Lopushanka-Khominin",
+					parag1TranslateHeroes:
+						"„Nanashkov's House” to klasyczny dom Boyko. Zbudowany w 1930 roku. Osobliwość autentycznych budynków tego regionu jest połączenie pod jednym dachem mieszkalnych i budynków. Bezpośrednio obok salonu znajduje się korytarz, zwany cieniami, znajduje się stół (walka), stodoła (stajnia). Nadal jest spiżarnia, drużyna, kurczak.",
+					
+					subtitle2TranslateHeroes:"The Bell Tower of St. Archanioł Michael w Yasenitsa-Zamkova",
+					parag2TranslateHeroes:"Trzy-poziomowy dzwonek Tower-Kaplyssy 1730-A Monument o znaczeniu krajowym, zawarty w State Register of Cultural Help (nr 1438/0). Przedstawiciel Galian Architectural School. Słynie z harmonii swoich proporcji. Kończy się ośmiokątnym topem namiotowym. Na pierwszym poziomie Bell Tower znajdowała się spiżarnia, która przechowywała przybory kościelne, stare ikony i miód z chwiejności kościelnej. Dzisiaj jest mini-muzowanie ludowego życia. Na drugim piętrze znajdowała się kaplica wstawiennictwa Najświętszej Dziewicy. Dziś istnieje wystawa haftowanych ikon i koni oraz innych starożytnych rzeczy i akcesoriów kościelnych.",
+
+					subtitle3TranslateHeroes:"Kościół św. Bazylia Wielki (św. Mikołaj) w Wielkiej Wołosyanka",
+					parag3TranslateHeroes:"Współczesny budynek kościoła św. Bazylia został zbudowany w 1903 roku na inicjatywie parafii księdza ks. Albina Dobryansky na miejscu starego kościoła, którego pierwsza informacja pochodzi z 1577 r. Co ciekawe, w 1668 r. Miejsce Stas Vasylkovich i jego żona Ogafia przedstawili książkę Johniki Galyatovsky'ego Kościołowi „Key of Razminia”, opublikowanej w LVIV zaledwie trzy lata wcześniej! Ten kościół został wzniesiony przez mistrza-mistrza Ivana i Vasyl Vasykiv z doliny legendarnego architekta LVIV Vasyl Nagirny w stylu neo-Ukraińskiego.",
+
+					subtitle4TranslateHeroes:"Turier Village",
+					parag4TranslateHeroes:"Turier to starożytna wioska Boyko, najdłuższa w społeczności Strail (555 hektarów, długość wszystkich ulic wynosi 36 km). Nawet w czasach Kijowa Rusa była osada wojskowa i osada strażnika, która broniła starożytnej drogi handlowej „rosyjskiej ścieżki”. W wiosce zachowują się ślady wczesnych wałów historycznych. Archeolodzy znaleźli tutaj starożytny rosyjski miecz i inne rzeczy. Według niektórych danych, pierwsza zachowana pisemna wzmianka o wiosce jest datowana.",
+
+					subtitle5TranslateHeroes:"Kościół św. Mikołaja w wiosce Turier (Dolishnya) w 1690 roku",
+					parag5TranslateHeroes:"Jest to najstarszy kościół ze społeczności Strail, zbudowany w 1690 roku. W wiosce znajduje się legenda o strukturze tego kościoła: „Dżentelmen nie pozwolił Kościołowi na zbudowanie tego punktu, więc ludzie byli potajemnie przygotowani w lesie, a kiedy nadszedł właściwy moment (dżentelmen opuścił wioskę w Biznes), chłopi zostali przeniesieni, a kościół został przeniesiony w nocy. ”. Ten malowniczy kościół był wielokrotnie przedstawiany na akwarelach i linorytach na święta Bożego Narodzenia i Wielkanocne, ukraińska artystka Elena Kulchytska w latach dwudziestych. Podczas drugiej wojny światowej kościół został uszkodzony, ale w 1945 roku został naprawiony.",
+
+					subtitle6TranslateHeroes:"Wieża pamięci w niedzielę",
+					parag6TranslateHeroes:"Jest to najwyższa drewniana wieża dzwonowa na Ukrainie i Europie, której wysokość wynosi 43 metry. Wysokość ta nie jest przypadkowa-IT symbolizuje pamięć 43. rebeliantów UPA, którzy zmarli w 1943 r. W bitwie z nazistami. Tutaj możesz wspiąć się na platformę widokową i uderzyć w dzwonek w pamięć, patrząc na nieograniczone pasma górskie w regionach LVIV i Transcarpathian, o które młodzi chłopcy walczyli i oddali życie podczas naszych drugich konkursów wyzwoleniach. Rok później, w 1944 r., Odbyła się epokowa, bez przesady, dla naszego kraju-wielkiego Kongresu przywódców und, dowódców UPA, delegatów różnych partii, które zostały ukoronowane z wyborem ukraińskiej rady wyzwoleńczej-podziemnej ziemi Rząd Ruch Wyzwolenia Ukraińców do połowy lat 50. XX wieku. I to jest cudowna historia świadomej jedności narodu ukraińskiego. Dlaczego? Ponieważ jedna trzecia wybranych delegatów nie pochodziła z Galicji, ale szef UHWR wybrany Poltava Cyril Osmak. Tak, ruchem Bandera zarządzał Dnieper, który mieszkał w tych wioskach!",
+
+					subtitle7TranslateHeroes:"Cyryl Osmak's Historical and Memorial Museum, Uhvr Heads, niedziela",
+					parag7TranslateHeroes:"Cyril Osmak (pseudo „Marko Goryansky”) jest ukraińskim naukowcem, ekonomistą rolnym, uczestnikiem pierwszego i drugiego konkursu wyzwolenia, członkiem Rady Środkowej, OUN, szef ukraińskiej Rady Wyzwolenia Ogólnego (UHWR) - Underground Rząd i Parlament, rząd kto był w aktualizacji. UHWR, utworzone na Zgromadzeniu Ustawowym w dniach 11-15 lipca 1944 r. Na górze Dil w lesie między wioskami w niedzielę i Sprinę, była organizacją super-stronniczą. Tylko 9 z 25 delegatów, którzy otrzymali mandaty, było partie und (b). Jedna trzecia delegatów - z regionu Dnieper, 17 - z Volyn i Galicia. Cyril Osmak i jego żona mieszkali w wiosce niedzieli i Turiera Gorishne. Muzeum Cyril Osmak zostało założone we wrześniu 2014 r. W terenie domu ludowego wioski niedzieli (dawny budynek oświecenia). Grupa naukowców i specjalistów muzealnych pracowała nad opracowaniem i budową ekspozycji. Muzeum ma dwie sekcje tematyczne. Podstawą ekspozycji są dokumenty archiwalne, zdjęcia i inne materiały, literatura podarowana przez Natalia Osmak, córkę Cyryla Osmaka, wspomnienia jego współczesnych i krewnych, zebranych przez Love Koval. Druga sekcja to zbiór eksponatów związanych z życiem i życiem Ukraińczyków z regionu Carpathian XIX i XX wieku. (krosna, starożytne łuski, kawiarnie, pala dla dzieci, dziewiętnaste haft, forma żołnierzy UPA i inne zainteresowania) i obrazy.",
+
+					subtitle8TranslateHeroes:"Czerwone -książki jagodowe trujące w niedzielę",
+					parag8TranslateHeroes:"Wszystkie części tego drzewa - kora, liście, a nawet drewno - są trujące dla ludzi. Zawierają dużą liczbę taksówek, substancję, która jest trująca dla ludzi i niektórych zwierząt. Wcześniej drewniane wiązki zostały celowo wykonane w domach na suficie Yajadgo Tisza. Tak więc dom był chroniony przed infekcjami. Ze względu na masowe ścinanie drogich mebli, drzewo to jest teraz rzadkie i zostało zachowane tylko w górzystnych regionach naszego kraju - Carpatian i Krym. W czasach starożytnych tysiące użycia jako niezawodny sposób zabicia przeciwnika. Napoje zostały wykonane z drewna. Po wypiciu takiej miski wina osoba szybko umarła. Ludzie uważali również, że korona tego drzewa jest bardzo niebezpieczna. Uważano, że nie możesz spać pod TIS, ponieważ nigdy więcej się nie obudzisz. Jednak z czasem udowodniono, że tak nie było. Śmiertelna dawka dla ludzi jest zjedzenie 100 g świeżych igieł. Ponadto w żadnym wypadku nie możesz wypróbować pięknych czerwonych jagód, które rosną na drzewie. Jednak jelenie i zające jedzą kora i igły swobodnie, nie poświęcając zdrowia. Co ciekawe, im starsze drzewo, tym bardziej jest trujące. I żyje przez długi czas - nawet do 3000 lat! Cóż, odwiedź Rippece (podwórko), w którym rośnie, i zapytaj lokalne gadżety, jak żyją pod tym rzadkim trującym drzewem z właściwościami leczniczymi 🙂 i przegapić - zapisz współrzędne: 49.316899, 23.103886",
+
 				},
 			},
 		},
@@ -833,6 +914,86 @@ document.addEventListener("DOMContentLoaded", function () {
 		var parag9TranslateElement = document.querySelectorAll(".parag9Translate");
 		parag9TranslateElement.forEach(function (parag9Translate) {
 			parag9Translate.textContent = i18next.t("parag9Translate");
+		});
+		
+		var subtitle1translateElementHeroes = document.querySelectorAll(".subtitle1TranslateHeroes");
+		subtitle1translateElementHeroes.forEach(function (subtitle1TranslateHeroes) {
+			subtitle1TranslateHeroes.textContent = i18next.t("subtitle1TranslateHeroes");
+		});
+
+		var parag1TranslateElementHeroes = document.querySelectorAll(".parag1TranslateHeroes");
+		parag1TranslateElementHeroes.forEach(function (parag1TranslateHeroes) {
+			parag1TranslateHeroes.textContent = i18next.t("parag1TranslateHeroes");
+		});
+
+		var subtitle2translateElementHeroes = document.querySelectorAll(".subtitle2TranslateHeroes");
+		subtitle2translateElementHeroes.forEach(function (subtitle2TranslateHeroes) {
+			subtitle2TranslateHeroes.textContent = i18next.t("subtitle2TranslateHeroes");
+		});
+
+		var parag2TranslateElementHeroes = document.querySelectorAll(".parag2TranslateHeroes");
+		parag2TranslateElementHeroes.forEach(function (parag2TranslateHeroes) {
+			parag2TranslateHeroes.textContent = i18next.t("parag2TranslateHeroes");
+		});
+
+		var subtitle3translateElementHeroes = document.querySelectorAll(".subtitle3TranslateHeroes");
+		subtitle3translateElementHeroes.forEach(function (subtitle3TranslateHeroes) {
+			subtitle3TranslateHeroes.textContent = i18next.t("subtitle3TranslateHeroes");
+		});
+
+		var parag3TranslateElementHeroes = document.querySelectorAll(".parag3TranslateHeroes");
+		parag3TranslateElementHeroes.forEach(function (parag3TranslateHeroes) {
+			parag3TranslateHeroes.textContent = i18next.t("parag3TranslateHeroes");
+		});
+
+		var subtitle4translateElementHeroes = document.querySelectorAll(".subtitle4TranslateHeroes");
+		subtitle4translateElementHeroes.forEach(function (subtitle4TranslateHeroes) {
+			subtitle4TranslateHeroes.textContent = i18next.t("subtitle4TranslateHeroes");
+		});
+
+		var parag4TranslateElementHeroes = document.querySelectorAll(".parag4TranslateHeroes");
+		parag4TranslateElementHeroes.forEach(function (parag4TranslateHeroes) {
+			parag4TranslateHeroes.textContent = i18next.t("parag4TranslateHeroes");
+		});
+
+		var subtitle5translateElementHeroes = document.querySelectorAll(".subtitle5TranslateHeroes");
+		subtitle5translateElementHeroes.forEach(function (subtitle5TranslateHeroes) {
+			subtitle5TranslateHeroes.textContent = i18next.t("subtitle5TranslateHeroes");
+		});
+
+		var parag5TranslateElementHeroes = document.querySelectorAll(".parag5TranslateHeroes");
+		parag5TranslateElementHeroes.forEach(function (parag5TranslateHeroes) {
+			parag5TranslateHeroes.textContent = i18next.t("parag5TranslateHeroes");
+		});
+
+		var subtitle6translateElementHeroes = document.querySelectorAll(".subtitle6TranslateHeroes");
+		subtitle6translateElementHeroes.forEach(function (subtitle6TranslateHeroes) {
+			subtitle6TranslateHeroes.textContent = i18next.t("subtitle6TranslateHeroes");
+		});
+
+		var parag6TranslateElementHeroes = document.querySelectorAll(".parag6TranslateHeroes");
+		parag6TranslateElementHeroes.forEach(function (parag6TranslateHeroes) {
+			parag6TranslateHeroes.textContent = i18next.t("parag6TranslateHeroes");
+		});
+
+		var subtitle7translateElementHeroes = document.querySelectorAll(".subtitle7TranslateHeroes");
+		subtitle7translateElementHeroes.forEach(function (subtitle7TranslateHeroes) {
+			subtitle7TranslateHeroes.textContent = i18next.t("subtitle7TranslateHeroes");
+		});
+
+		var parag7TranslateElementHeroes = document.querySelectorAll(".parag7TranslateHeroes");
+		parag7TranslateElementHeroes.forEach(function (parag7TranslateHeroes) {
+			parag7TranslateHeroes.textContent = i18next.t("parag7TranslateHeroes");
+		});
+
+		var subtitle8translateElementHeroes = document.querySelectorAll(".subtitle8TranslateHeroes");
+		subtitle8translateElementHeroes.forEach(function (subtitle8TranslateHeroes) {
+			subtitle8TranslateHeroes.textContent = i18next.t("subtitle8TranslateHeroes");
+		});
+
+		var parag8TranslateElementHeroes = document.querySelectorAll(".parag8TranslateHeroes");
+		parag8TranslateElementHeroes.forEach(function (parag8TranslateHeroes) {
+			parag8TranslateHeroes.textContent = i18next.t("parag8TranslateHeroes");
 		});
 
 		var titleTranslanteElement = document.querySelector(".titleTranslante");
