@@ -1,3 +1,15 @@
 <h1>блог та події</h1>
 
+<%if (events.length> 0) { %> <% events.forEach((event) => { %>
+<img src="<%= event.img %>" alt="Event Image" style="max-width: 100px; max-height: 100px" />
+<h2><%= event.title %></h2>
+<p><%= event.description %></p>
+<p><%= event.date %></p>
 
+<button onclick="window.location.href='<%=base_url%>/events/<%= event.id %>'">Детальніше</button>
+<hr />
+<hr />
+
+<% }) %> <% } else { %>
+<p>Подій не знайдено</p>
+<% } %>

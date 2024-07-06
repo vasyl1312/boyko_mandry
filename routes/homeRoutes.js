@@ -39,6 +39,7 @@ async function getMainContactInfo() {
     const contacts = await Contact.find();
     const services = await Service.find().sort({ _id: -1 });
     const events = await Event.find().sort({ _id: -1 });
+    let base_url = process.env.BASE_URL_PORT || `http://localhost:${process.env.PORT}`;
 
     return {
       mainPhones: mainPhones[0].phone,
@@ -52,6 +53,7 @@ async function getMainContactInfo() {
       phone: contacts[0].phone,
       services,
       events,
+      base_url,
     };
   } catch (error) {
     console.error(error);
@@ -68,6 +70,16 @@ routes.forEach((route) => {
       console.error(error);
       res.status(500).send("Internal Server Error");
     }
+  });
+});
+
+router.get("/events/:id", async (req, res) => {
+  const event = await Event.findById(req.params.id);
+  let base_url = process.env.BASE_URL_PORT || `http://localhost:${process.env.PORT}`;
+
+  res.render("event", {
+    event,
+    base_url,
   });
 });
 

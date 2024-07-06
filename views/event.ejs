@@ -1,0 +1,42 @@
+<!-- я колись так робив але треба погуглити як краще бо тут треба підколючати певно щось
+  
+  <button
+  id="copy-btn"
+  class="btn btn-outline-dark mt-auto"
+  onclick="setClipboard('<%=base_url%>/events/<%= event.id %>')"
+>
+  Copy URL
+</button>
+
+<div class="social-icons" onclick="setMedia('<%=base_url%>/events/<%= event.id %>')">
+  <ul>
+    <li>
+      <a class="facebook" target="blank"><i class="fa fa-facebook"></i></a>
+    </li>
+    <li>
+      <a class="twitter" target="blank"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+      <a class="email" target="blank"><i class="fa fa-envelope"></i></a>
+    </li>
+    <li>
+      <a class="linkedin" target="blank"><i class="fa fa-linkedin"></i></a>
+    </li>
+    <li>
+      <a class="telegram" target="blank"><i class="fa fa-telegram"></i></a>
+    </li>
+  </ul>
+</div> -->
+
+<h1>you can copy this urls for social medias: <%=base_url%>/events/<%= event.id %></h1>
+
+<img
+  src="<%= event.img === '/images/empty.png' ? event.img : '/' + event.img %>"
+  alt="Event Image"
+  style="max-width: 100px; max-height: 100px"
+/>
+<h2><%= event.title %></h2>
+<p><%= event.description %></p>
+<p><%= event.date %></p>
+
+<a href="<%=base_url%>/events">назад</a>

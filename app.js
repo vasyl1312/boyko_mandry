@@ -9,7 +9,7 @@ const loginRoutes = require("./routes/loginRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 const logoutRoutes = require("./routes/logoutRoutes");
 const fileMiddleware = require("./middleware/uploadFile");
-const unknownRouteRedirect = require("./middleware/unknownRouteRedirect");
+// const unknownRouteRedirect = require("./middleware/unknownRouteRedirect");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -50,7 +50,6 @@ app.use("/", homeRoutes);
 app.use("/boyko_vhid", loginRoutes);
 app.use("/boyko_vyhid", logoutRoutes);
 app.use("/admin", adminRoutes);
-app.use(unknownRouteRedirect);
 
 const start = async () => {
   try {
