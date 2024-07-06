@@ -8,6 +8,8 @@ const homeRoutes = require("./routes/homeRoutes");
 const loginRoutes = require("./routes/loginRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 const logoutRoutes = require("./routes/logoutRoutes");
+const fileMiddleware = require("./middleware/uploadFile");
+const unknownRouteRedirect = require("./middleware/unknownRouteRedirect");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -15,6 +17,7 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/views"));
 app.use("/views/image", express.static(__dirname + "/views/image"));
+app.use("/images", express.static(__dirname + "/images"));
 app.use(
   "/views/css",
   (req, res, next) => {
@@ -41,12 +44,13 @@ app.use(
     saveUninitialized: true,
   })
 );
-
+app.use(fileMiddleware.single("avatar"));
 
 app.use("/", homeRoutes);
 app.use("/boyko_vhid", loginRoutes);
 app.use("/boyko_vyhid", logoutRoutes);
 app.use("/admin", adminRoutes);
+app.use(unknownRouteRedirect);
 
 const start = async () => {
   try {

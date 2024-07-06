@@ -83,12 +83,7 @@
       <hr />
       <h2>Edit contacts</h2>
       <form action="/admin/edit_contacts" method="post">
-        <input
-          type="text"
-          name="address"
-          placeholder="Enter new address"
-          value="<%= address %>"
-        />
+        <input type="text" name="address" placeholder="Enter new address" value="<%= address %>" />
         <input
           type="text"
           name="postcode"
@@ -102,14 +97,78 @@
       </form>
       <hr />
 
-      <!-- <form action="/admin/add" method="post">
-        <input type="text" name="address" placeholder="Enter new address" />
-        <input type="text" name="postcode" placeholder="Enter new postcode" />
-        <input type="text" name="phone" placeholder="Enter new phone" />
-        <input type="text" name="email" placeholder="Enter new email" />
+      <hr />
+      <hr />
+      <h2>Додати послугу</h2>
+      <form action="/admin/addServices" method="post" enctype="multipart/form-data">
+        <input type="text" name="title" placeholder="Enter title" required />
+        <br />
 
-        <button type="submit">add</button>
-      </form> -->
+        <h5>Будь ласка виберіть фото (jpg/png/jpeg)</h5>
+        <input type="file" name="avatar" />
+        <br />
+        <input type="number" name="show_price" placeholder="Enter show price" required />
+        <br />
+        <textarea
+          rows="5"
+          cols="45"
+          name="description"
+          id="description"
+          minlength="1"
+          maxlength="500"
+          placeholder="Тут ви можете розказати більше про цю послугу але максимум в 500 символів"
+          required
+        ></textarea>
+        <br />
+        <input type="text" name="category" placeholder="Enter category" required />
+        <br />
+        <input type="number" name="price_per_hour" placeholder="Enter price per hour" required />
+        <br />
+        <input type="number" name="price_per_day" placeholder="Enter price per day" required />
+        <br />
+        <button type="submit">Add</button>
+      </form>
+      <hr />
+      <hr />
+
+      <hr />
+      <h2>Всі послуги</h2>
+      <table>
+        <tr>
+          <th>img</th>
+          <th>title</th>
+          <th>show_price</th>
+          <th>description</th>
+          <th>category</th>
+          <th>price_per_hour</th>
+          <th>price_per_day</th>
+          <th>delete</th>
+        </tr>
+        <% services.forEach((service) => { %>
+        <tr>
+          <td>
+            <img
+              src="<%= service.img %>"
+              alt="Service Image"
+              style="max-width: 100px; max-height: 100px"
+            />
+          </td>
+          <td><%= service.title %></td>
+          <td><%= service.show_price %></td>
+          <td><%= service.description %></td>
+          <td><%= service.category %></td>
+          <td><%= service.price_per_hour %></td>
+          <td><%= service.price_per_day %></td>
+          <td>
+            <form action="/admin/deleteService" method="post">
+              <input type="hidden" name="id" value="<%= service.id %>" />
+              <input type="hidden" name="img" value="<%= service.img %>" />
+              <button type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+        <% }); %>
+      </table>
     </main>
   </body>
 </html>

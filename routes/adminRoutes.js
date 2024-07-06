@@ -1,10 +1,13 @@
 const { Router } = require("express");
+var fs = require("fs");
 const MainPhone = require("../models/MainPhone");
 const MainEmail = require("../models/MainEmail");
 const Inst = require("../models/Inst");
 const Facebook = require("../models/Facebook");
 const TransferPhone = require("../models/TransferPhone");
 const Contact = require("../models/Contacts");
+const Service = require("../models/Services");
+const EMPTYIMG = "../views/image/empty.png";
 const router = new Router();
 
 router.get("/", async (req, res) => {
@@ -15,6 +18,7 @@ router.get("/", async (req, res) => {
     const facebooks = await Facebook.find();
     const transferPhones = await TransferPhone.find();
     const contacts = await Contact.find();
+    const services = await Service.find().sort({ _id: -1 });
 
     res.render("admin", {
       login: req.session.user,
@@ -27,6 +31,7 @@ router.get("/", async (req, res) => {
       postcode: contacts[0].postcode,
       email: contacts[0].email,
       phone: contacts[0].phone,
+      services,
     });
   } else {
     res.redirect("/");
@@ -120,17 +125,53 @@ router.post("/edit_contacts", async (req, res) => {
   }
 });
 
-// router.post("/add", async (req, res) => {
-//   if (req.session && req.session.user) {
-//     const { address, postcode, phone, email } = req.body;
+router.post("/addServices", async (req, res) => {
+  if (req.session && req.session.user) {
+    try {
+      const { title, show_price, description, category, price_per_hour, price_per_day } = req.body;
+      const img = req.file ? req.file.path : EMPTYIMG;
 
-//     const newPhone = new Contact({ address, postcode, phone, email });
-//     await newPhone.save();
+      const newService = new Service({
+        title,
+        img,
+        show_price,
+        description,
+        category,
+        price_per_hour,
+        price_per_day,
+      });
 
-//     return res.redirect("/admin");
-//   } else {
-//     return res.redirect("/");
-//   }
-// });
+      await newService.save();
+      return res.redirect("/admin");
+    } catch (error) {
+      console.error(error);
+      return res.redirect("/admin");
+    }
+  } else {
+    return res.redirect("/");
+  }
+});
+
+router.post("/deleteService", async (req, res) => {
+  if (req.session && req.session.user) {
+    try {
+      const { id } = req.body;
+
+      await Service.findByIdAndDelete(id);
+
+      if (req.body.img != "/images/empty.png") {
+        var filePath = `${req.body.img}`;
+        fs.unlinkSync(filePath);
+      }
+
+      return res.redirect("/admin");
+    } catch (error) {
+      console.error(error);
+      return res.redirect("/admin");
+    }
+  } else {
+    return res.redirect("/");
+  }
+});
 
 module.exports = router;
