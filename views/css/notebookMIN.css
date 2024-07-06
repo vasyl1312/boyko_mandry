@@ -191,6 +191,18 @@
 }
 
 @media screen and (max-width: 1010px) {
+	.blog-wrap{
+		padding: 0px 30px;
+	}
+
+	.blog-elements{
+		flex-direction: column;
+	}
+
+	.blog-element1, .blog-element2 {
+		width: 100%;
+	}
+
 	.container-title-wrap_2 {
 		margin: 60px 0px 0px 0px;
 	}

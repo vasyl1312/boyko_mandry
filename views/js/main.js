@@ -157,3 +157,21 @@ function removeBrElements() {
 //         });
 //     });
 // });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const blogButton = document.querySelector(".blog-head__button");
+    const containerBlog = document.querySelector(".container-blog");
+    const mediaQuery = window.matchMedia("(max-width: 450px)");
+
+    function handleMediaQueryChange(e) {
+      if (e.matches) {
+        containerBlog.appendChild(blogButton);
+      } else {
+        const originalWrapper = document.querySelector(".blog-head__wrapper");
+        originalWrapper.appendChild(blogButton);
+      }
+    }
+
+    handleMediaQueryChange(mediaQuery); // Initial check
+    mediaQuery.addEventListener("change", handleMediaQueryChange); // On resize
+  });

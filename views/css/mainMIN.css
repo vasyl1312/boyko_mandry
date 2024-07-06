@@ -1156,7 +1156,7 @@ header.hidden {
 }
 
 .container-blog {
-	display: none;
+	display: flex;
 }
 
 .blog-wrap {
@@ -1249,6 +1249,7 @@ header.hidden {
 .blog-element1__subtitle,
 .blog-element2__subtitle {
 	overflow: hidden;
+	height: 45px;
 	color: #1f2023;
 	text-overflow: ellipsis;
 	font-size: 16px;
@@ -1743,4 +1744,52 @@ header.hidden {
 
 .close-icon img:hover {
 	background-color: rgba(207, 232, 208, 0.8);
+}
+
+.elementAttraction__link {
+    color: var(--green, #01594D);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 148%;
+    letter-spacing: 0.18px;
+}
+
+.elementAttraction__link>a {
+    color: var(--green, #01594D);
+    font-variant-numeric: lining-nums proportional-nums;
+
+    /* button 18 */
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 148%;
+    /* 26.64px */
+    letter-spacing: 0.18px;
+    transition: opacity 0.3s ease-in;
+}
+
+.elementAttraction__link>a:hover {
+    opacity: 70%;
+}
+
+.wrapperLink_data{
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.data{
+	color: #1F2023;
+	font-variant-numeric: lining-nums proportional-nums;
+	font-family: Raleway;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%; /* 16.8px */
+	letter-spacing: 0.36px;
+	opacity: 0.7;
 }
