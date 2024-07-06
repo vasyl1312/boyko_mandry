@@ -90,7 +90,7 @@
           <ul>
             <a href="/attractions" class="attractions"> Пам'ятки </a>
             <a href="/aboutUs" class="aboutUs"> Про нас </a>
-            <a href="#" class="blogAndEvents"> Блог та події </a>
+            <a href="/events" class="blogAndEvents"> Блог та події </a>
           </ul>
         </div>
         <div class="header-white-line"></div>
@@ -182,10 +182,11 @@
           data-additional-text3="<%= service.price_per_hour_1 %> грн"
           data-additional-text4="<%= service.price_per_day_1 %> грн"
         >
-          <!-- data-additional-text2="<%= service.category_2 %>"
+          <!--        !!!!!!!!!!!!!!!!!!!тут витягуй з бд сам і вставляй в html  а то воно просто 3 дублює 
+            data-additional-text2="<%= service.category_2 %>".   
           data-additional-text3="<%= service.price_per_hour_2 %> грн"
           data-additional-text4="<%= service.price_per_day_2 %> грн" -->
-          
+
           <img src="<%= service.img %>" alt="cycles" />
           <div class="container-servicesWrap__elementWrap_txt">
             <h4><%= service.title %></h4>
@@ -306,7 +307,7 @@
                 <a href="/aboutUs">
                   <p class="aboutUs">Про нас</p>
                 </a>
-                <a href="#">
+                <a href="/events">
                   <p class="blogAndEvents">Блог та події</p>
                 </a>
               </div>

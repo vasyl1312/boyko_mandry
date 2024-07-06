@@ -25,6 +25,7 @@ const routes = [
   { path: "/routesChurch", template: "routesChurch" },
   { path: "/routesHeroes", template: "routesHeroes" },
   { path: "/routesMaydan", template: "routesMaydan" },
+  { path: "/events", template: "events" },
 ];
 
 async function getMainContactInfo() {
