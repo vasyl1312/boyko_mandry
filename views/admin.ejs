@@ -146,6 +146,7 @@
       <hr />
       <h2>Всі послуги</h2>
       <table>
+        <%if (services.length> 0) { %> <% services.forEach((service) => { %>
         <tr>
           <th>img</th>
           <th>title</th>
@@ -160,29 +161,79 @@
           <th>category3</th>
           <th>price_per_hour3</th>
           <th>price_per_day3</th>
-          <th>delete</th>
         </tr>
-        <% services.forEach((service) => { %>
+        <form action="/admin/editService" method="post" enctype="multipart/form-data">
+          <tr>
+            <td>
+              <img
+                src="<%= service.img %>"
+                alt="Service Image"
+                style="max-width: 100px; max-height: 100px"
+              />
+              <h5 style="color: #646464">
+                Будь ласка виберіть нове фото якщо потрібно (jpg/png/jpeg)
+              </h5>
+              <input type="file" name="avatar" />
+            </td>
+
+            <td><input type="text" name="title" value="<%= service.title %>" /></td>
+            <td><input type="number" name="show_price" value="<%= service.show_price %>" /></td>
+            <td>
+              <textarea
+                rows="5"
+                cols="45"
+                name="description"
+                id="description"
+                minlength="1"
+                maxlength="500"
+                required
+              >
+<%= service.description %></textarea
+              >
+            </td>
+            <td><input type="text" name="category_1" value="<%= service.category_1 %>" /></td>
+            <td>
+              <input
+                type="number"
+                name="price_per_hour_1"
+                value="<%= service.price_per_hour_1 %>"
+              />
+            </td>
+            <td>
+              <input type="number" name="price_per_day_1" value="<%= service.price_per_day_1 %>" />
+            </td>
+            <td><input type="text" name="category_2" value="<%= service.category_2 %>" /></td>
+            <td>
+              <input
+                type="number"
+                name="price_per_hour_2"
+                value="<%= service.price_per_hour_2 %>"
+              />
+            </td>
+            <td>
+              <input type="number" name="price_per_day_2" value="<%= service.price_per_day_2 %>" />
+            </td>
+            <td><input type="text" name="category_3" value="<%= service.category_3 %>" /></td>
+            <td>
+              <input
+                type="number"
+                name="price_per_hour_3"
+                value="<%= service.price_per_hour_3 %>"
+              />
+            </td>
+            <td>
+              <input type="number" name="price_per_day_3" value="<%= service.price_per_day_3 %>" />
+            </td>
+            <td>
+              <input type="hidden" name="id" value="<%= service.id %>" />
+              <input type="hidden" name="img" value="<%= service.img %>" />
+              <br />
+              <button type="submit">Edit</button>
+            </td>
+          </tr>
+        </form>
+
         <tr>
-          <td>
-            <img
-              src="<%= service.img %>"
-              alt="Service Image"
-              style="max-width: 100px; max-height: 100px"
-            />
-          </td>
-          <td><%= service.title %></td>
-          <td><%= service.show_price %></td>
-          <td><%= service.description %></td>
-          <td><%= service.category_1 %></td>
-          <td><%= service.price_per_hour_1 %></td>
-          <td><%= service.price_per_day_1 %></td>
-          <td><%= service.category_2 %></td>
-          <td><%= service.price_per_hour_2 %></td>
-          <td><%= service.price_per_day_2 %></td>
-          <td><%= service.category_3 %></td>
-          <td><%= service.price_per_hour_3 %></td>
-          <td><%= service.price_per_day_3 %></td>
           <td>
             <form action="/admin/deleteService" method="post">
               <input type="hidden" name="id" value="<%= service.id %>" />
@@ -190,9 +241,13 @@
               <button type="submit">Delete</button>
             </form>
           </td>
+          <% }) %> <% } else {%>
+          <h3><span class="orange-text">Opps</span>...</h3>
+          <b> At this moment, there are not any posts </b>
+          <%}%>
         </tr>
-        <% }); %>
       </table>
+      <hr />
     </main>
   </body>
 </html>

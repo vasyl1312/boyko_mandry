@@ -7,7 +7,7 @@ const Facebook = require("../models/Facebook");
 const TransferPhone = require("../models/TransferPhone");
 const Contact = require("../models/Contacts");
 const Service = require("../models/Services");
-const EMPTYIMG = "../views/image/empty.png";
+const EMPTYIMG = "/images/empty.png";
 const router = new Router();
 
 router.get("/", async (req, res) => {
@@ -179,8 +179,8 @@ router.post("/deleteService", async (req, res) => {
 
       await Service.findByIdAndDelete(id);
 
-      if (req.body.img != "/images/empty.png") {
-        var filePath = `${req.body.img}`;
+      if (req.body.img !== "/images/empty.png") {
+        const filePath = `${req.body.img}`;
         fs.unlinkSync(filePath);
       }
 
@@ -191,6 +191,34 @@ router.post("/deleteService", async (req, res) => {
     }
   } else {
     return res.redirect("/");
+  }
+});
+
+router.post("/editService", async (req, res) => {
+  try {
+    const { id } = req.body;
+    delete req.body.id;
+
+    if (req.file) {
+      if (req.body.img !== "/images/empty.png") {
+        const filePath = `${req.body.img}`;
+        fs.unlinkSync(filePath);
+      }
+      req.body.img = req.file.path;
+    }
+
+    const service = await Service.findById(id);
+    if (!service) {
+      return res.redirect("/admin");
+    }
+
+    Object.assign(service, req.body);
+    await service.save();
+
+    return res.redirect("/admin");
+  } catch (e) {
+    console.error(e);
+    return res.redirect("/admin");
   }
 });
 

@@ -174,20 +174,22 @@
         </p>
       </div>
       <div class="container-servicesWrap">
+        <%if (services.length> 0) { %> <% services.forEach((service) => { %>
         <div
           class="container-servicesWrap__elementWrap"
-          data-additional-text1="Найбільш популярна карегорія послуги прокат велосипедів. Перш за все, MTB – це ніверсальні
-            велосипеди, що підійдуть як для прогулянок у складних дорожних умовах, так і для марафонів
-            чи
-            багатоденних подорожей."
-          data-additional-text2="Гірські 26"
-          data-additional-text3="300 грн"
-          data-additional-text4="1500 грн"
+          data-additional-text1="<%= service.description %>"
+          data-additional-text2="<%= service.category_1 %>"
+          data-additional-text3="<%= service.price_per_hour_1 %> грн"
+          data-additional-text4="<%= service.price_per_day_1 %> грн"
         >
-          <img src="/image-page-services/cycles.jpg" alt="cycles" />
+          <!-- data-additional-text2="<%= service.category_2 %>"
+          data-additional-text3="<%= service.price_per_hour_2 %> грн"
+          data-additional-text4="<%= service.price_per_day_2 %> грн" -->
+          
+          <img src="<%= service.img %>" alt="cycles" />
           <div class="container-servicesWrap__elementWrap_txt">
-            <h4>Оренда велосипеду</h4>
-            <h4><span>від 1500 грн</span></h4>
+            <h4><%= service.title %></h4>
+            <h4><span>від <%= service.show_price %> грн</span></h4>
           </div>
           <div class="container-servicesWrap__elementWrap_buttons">
             <a class="button" href="tel:<%= mainPhones %>"
@@ -199,73 +201,10 @@
             /></a>
           </div>
         </div>
-        <div
-          class="container-servicesWrap__elementWrap"
-          data-additional-text1="Найбільш популярна карегорія послуги прокат велосипедів. Перш за все, MTB – це ніверсальні
-                велосипеди, що підійдуть як для прогулянок у складних дорожних умовах, так і для марафонів
-                чи
-                багатоденних подорожей."
-          data-additional-text2=""
-        >
-          <img src="/image-page-services/hire.jpg" alt="cycles" />
-          <div class="container-servicesWrap__elementWrap_txt">
-            <h4>Оренда намету</h4>
-            <h4><span>від 1500 грн</span></h4>
-          </div>
-          <div class="container-servicesWrap__elementWrap_buttons">
-            <a class="button" href="tel:<%= mainPhones %>"
-              ><img src="/image-page-services/TelephoneFill.svg" alt="telephone" />+380 97 91 46
-              771</a
-            >
-            <a class="popup-button" href=""
-              >Детальніше<img src="/image-page-services/plus.svg" alt="plus"
-            /></a>
-          </div>
-        </div>
-        <div
-          class="container-servicesWrap__elementWrap"
-          data-additional-text1="Найбільш популярна карегорія послуги прокат велосипедів. Перш за все, MTB – це ніверсальні
-            велосипеди, що підійдуть як для прогулянок у складних дорожних умовах, так і для марафонів
-            чи
-            багатоденних подорожей."
-        >
-          <img src="/image-page-services/cheese_tour.jpg" alt="cycles" />
-          <div class="container-servicesWrap__elementWrap_txt">
-            <h4>Тур «До бойків на сир»</h4>
-            <h4><span>від 1500 грн</span></h4>
-          </div>
-          <div class="container-servicesWrap__elementWrap_buttons">
-            <a class="button" href="tel:<%= mainPhones %>"
-              ><img src="/image-page-services/TelephoneFill.svg" alt="telephone" />+380 97 91 46
-              771</a
-            >
-            <a class="popup-button" href=""
-              >Детальніше<img src="/image-page-services/plus.svg" alt="plus"
-            /></a>
-          </div>
-        </div>
-        <div
-          class="container-servicesWrap__elementWrap"
-          data-additional-text1="Найбільш популярна карегорія послуги прокат велосипедів. Перш за все, MTB – це ніверсальні
-            велосипеди, що підійдуть як для прогулянок у складних дорожних умовах, так і для марафонів
-            чи
-            багатоденних подорожей."
-        >
-          <img src="/image-page-services/restourant.jpg" alt="cycles" />
-          <div class="container-servicesWrap__elementWrap_txt">
-            <h4>Кафе «Бойківська гостина»</h4>
-            <h4><span>від 1500 грн</span></h4>
-          </div>
-          <div class="container-servicesWrap__elementWrap_buttons">
-            <a class="button" href="tel:<%= mainPhones %>"
-              ><img src="/image-page-services/TelephoneFill.svg" alt="telephone" />+380 97 91 46
-              771</a
-            >
-            <a class="popup-button" href=""
-              >Детальніше<img src="/image-page-services/plus.svg" alt="plus"
-            /></a>
-          </div>
-        </div>
+        <% }) %> <% } else {%>
+        <h3><span class="orange-text">Opps</span>...</h3>
+        <b> At this moment, there are not any posts </b>
+        <%}%>
       </div>
       <div class="wrapperPopup" id="wrapperPopup">
         <div class="popUpDisplay">
