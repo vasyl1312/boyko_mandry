@@ -120,11 +120,23 @@
           required
         ></textarea>
         <br />
-        <input type="text" name="category" placeholder="Enter category" required />
+        <input type="text" name="category_1" placeholder="Enter category" required />
         <br />
-        <input type="number" name="price_per_hour" placeholder="Enter price per hour" required />
+        <input type="number" name="price_per_hour_1" placeholder="Enter price per hour" required />
         <br />
-        <input type="number" name="price_per_day" placeholder="Enter price per day" required />
+        <input type="number" name="price_per_day_1" placeholder="Enter price per day" required />
+        <br />
+        <input type="text" name="category_2" placeholder="Enter category 2" />
+        <br />
+        <input type="number" name="price_per_hour_2" placeholder="Enter price per hour 2" />
+        <br />
+        <input type="number" name="price_per_day_2" placeholder="Enter price per day 2" />
+        <br />
+        <input type="text" name="category_3" placeholder="Enter category 3" />
+        <br />
+        <input type="number" name="price_per_hour_3" placeholder="Enter price per hour 3" />
+        <br />
+        <input type="number" name="price_per_day_3" placeholder="Enter price per day 3" />
         <br />
         <button type="submit">Add</button>
       </form>
@@ -139,9 +151,15 @@
           <th>title</th>
           <th>show_price</th>
           <th>description</th>
-          <th>category</th>
-          <th>price_per_hour</th>
-          <th>price_per_day</th>
+          <th>category1</th>
+          <th>price_per_hour1</th>
+          <th>price_per_day1</th>
+          <th>category2</th>
+          <th>price_per_hour2</th>
+          <th>price_per_day2</th>
+          <th>category3</th>
+          <th>price_per_hour3</th>
+          <th>price_per_day3</th>
           <th>delete</th>
         </tr>
         <% services.forEach((service) => { %>
@@ -156,9 +174,15 @@
           <td><%= service.title %></td>
           <td><%= service.show_price %></td>
           <td><%= service.description %></td>
-          <td><%= service.category %></td>
-          <td><%= service.price_per_hour %></td>
-          <td><%= service.price_per_day %></td>
+          <td><%= service.category_1 %></td>
+          <td><%= service.price_per_hour_1 %></td>
+          <td><%= service.price_per_day_1 %></td>
+          <td><%= service.category_2 %></td>
+          <td><%= service.price_per_hour_2 %></td>
+          <td><%= service.price_per_day_2 %></td>
+          <td><%= service.category_3 %></td>
+          <td><%= service.price_per_hour_3 %></td>
+          <td><%= service.price_per_day_3 %></td>
           <td>
             <form action="/admin/deleteService" method="post">
               <input type="hidden" name="id" value="<%= service.id %>" />

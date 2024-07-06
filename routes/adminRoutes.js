@@ -128,7 +128,21 @@ router.post("/edit_contacts", async (req, res) => {
 router.post("/addServices", async (req, res) => {
   if (req.session && req.session.user) {
     try {
-      const { title, show_price, description, category, price_per_hour, price_per_day } = req.body;
+      const {
+        title,
+        show_price,
+        description,
+        category_1,
+        price_per_hour_1,
+        price_per_day_1,
+        category_2,
+        price_per_hour_2,
+        price_per_day_2,
+        category_3,
+        price_per_hour_3,
+        price_per_day_3,
+      } = req.body;
+
       const img = req.file ? req.file.path : EMPTYIMG;
 
       const newService = new Service({
@@ -136,9 +150,15 @@ router.post("/addServices", async (req, res) => {
         img,
         show_price,
         description,
-        category,
-        price_per_hour,
-        price_per_day,
+        category_1,
+        price_per_hour_1,
+        price_per_day_1,
+        category_2,
+        price_per_hour_2,
+        price_per_day_2,
+        category_3,
+        price_per_hour_3,
+        price_per_day_3,
       });
 
       await newService.save();
