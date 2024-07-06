@@ -7,6 +7,7 @@ const Facebook = require("../models/Facebook");
 const TransferPhone = require("../models/TransferPhone");
 const Contact = require("../models/Contacts");
 const Service = require("../models/Services");
+const Event = require("../models/Events");
 const EMPTYIMG = "/images/empty.png";
 const router = new Router();
 
@@ -19,6 +20,7 @@ router.get("/", async (req, res) => {
     const transferPhones = await TransferPhone.find();
     const contacts = await Contact.find();
     const services = await Service.find().sort({ _id: -1 });
+    const events = await Event.find().sort({ _id: -1 });
 
     res.render("admin", {
       login: req.session.user,
@@ -32,6 +34,7 @@ router.get("/", async (req, res) => {
       email: contacts[0].email,
       phone: contacts[0].phone,
       services,
+      events,
     });
   } else {
     res.redirect("/");
@@ -214,6 +217,100 @@ router.post("/editService", async (req, res) => {
 
     Object.assign(service, req.body);
     await service.save();
+
+    return res.redirect("/admin");
+  } catch (e) {
+    console.error(e);
+    return res.redirect("/admin");
+  }
+});
+
+router.post("/addEvent", async (req, res) => {
+  if (req.session && req.session.user) {
+    try {
+      const { title, description, date } = req.body;
+
+      const img = req.file ? req.file.path : EMPTYIMG;
+      // const additional_image = req.file ? req.file.path : EMPTYIMG;
+
+      const inputDate = new Date(date);
+      const day = String(inputDate.getDate()).padStart(2, "0");
+      const month = String(inputDate.getMonth() + 1).padStart(2, "0");
+      const year = inputDate.getFullYear();
+
+      const formattedDate = `${day}.${month}.${year}`;
+
+      const newEvent = new Event({
+        title,
+        date: formattedDate,
+        img,
+        description,
+        // additional_image,
+        // additional_description,
+      });
+
+      await newEvent.save();
+      return res.redirect("/admin");
+    } catch (error) {
+      console.error(error);
+      return res.redirect("/admin");
+    }
+  } else {
+    return res.redirect("/");
+  }
+});
+
+router.post("/deleteEvent", async (req, res) => {
+  if (req.session && req.session.user) {
+    try {
+      const { id } = req.body;
+
+      await Event.findByIdAndDelete(id);
+
+      if (req.body.img !== "/images/empty.png") {
+        const filePath = `${req.body.img}`;
+        fs.unlinkSync(filePath);
+      }
+
+      return res.redirect("/admin");
+    } catch (error) {
+      console.error(error);
+      return res.redirect("/admin");
+    }
+  } else {
+    return res.redirect("/");
+  }
+});
+
+router.post("/editEvent", async (req, res) => {
+  try {
+    const { id } = req.body;
+    delete req.body.id;
+
+    if (req.file) {
+      if (req.body.img !== "/images/empty.png") {
+        const filePath = `${req.body.img}`;
+        fs.unlinkSync(filePath);
+      }
+      req.body.img = req.file.path;
+    }
+
+    const event = await Event.findById(id);
+    if (!event) {
+      return res.redirect("/admin");
+    }
+
+    const inputDate = new Date(req.body.date);
+    const day = String(inputDate.getDate()).padStart(2, "0");
+    const month = String(inputDate.getMonth() + 1).padStart(2, "0");
+    const year = inputDate.getFullYear();
+
+    const formattedDate = `${day}.${month}.${year}`;
+
+    req.body.date = formattedDate;
+
+    Object.assign(event, req.body);
+    await event.save();
 
     return res.redirect("/admin");
   } catch (e) {

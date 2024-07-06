@@ -6,6 +6,7 @@ const Facebook = require("../models/Facebook");
 const TransferPhone = require("../models/TransferPhone");
 const Contact = require("../models/Contacts");
 const Service = require("../models/Services");
+const Event = require("../models/Events");
 const router = new Router();
 
 const routes = [
@@ -37,6 +38,7 @@ async function getMainContactInfo() {
     const transferPhones = await TransferPhone.find();
     const contacts = await Contact.find();
     const services = await Service.find().sort({ _id: -1 });
+    const events = await Event.find().sort({ _id: -1 });
 
     return {
       mainPhones: mainPhones[0].phone,
@@ -49,6 +51,7 @@ async function getMainContactInfo() {
       email: contacts[0].email,
       phone: contacts[0].phone,
       services,
+      events,
     };
   } catch (error) {
     console.error(error);

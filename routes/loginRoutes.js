@@ -6,6 +6,7 @@ const Facebook = require("../models/Facebook");
 const TransferPhone = require("../models/TransferPhone");
 const Contact = require("../models/Contacts");
 const Service = require("../models/Services");
+const Event = require("../models/Events");
 const router = new Router();
 
 router.get("/", (req, res) => {
@@ -24,6 +25,7 @@ router.post("/", async (req, res) => {
       const transferPhones = await TransferPhone.find();
       const contacts = await Contact.find();
       const services = await Service.find().sort({ _id: -1 });
+      const events = await Event.find().sort({ _id: -1 });
 
       res.render("admin", {
         login,
@@ -37,6 +39,7 @@ router.post("/", async (req, res) => {
         email: contacts[0].email,
         phone: contacts[0].phone,
         services,
+        events,
       });
     } else {
       res.render("login", { error: "Wrong login or password!" });
