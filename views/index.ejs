@@ -11,6 +11,7 @@
     <link rel="canonical" href="https://www.boykomandry.com/" />
     <link rel="stylesheet" href="/css/mainMIN.css" />
     <link rel="stylesheet" href="/css/notebookMIN.css" />
+    <link rel="stylesheet" href="/views/css/menuadaptive.css">
     <link
       rel="stylesheet"
       href="/css/mobileMIN.css"
@@ -89,81 +90,82 @@
           </div>
         </div>
       </div>
-      <div id="mobile-header" class="mobile-header">
-        <div class="header-info">
-          <div class="header-text">
-            <ul>
-              <a href="/routes" class="routes">Маршрути</a>
-              <a href="/services" class="services">Послуги</a>
-              <a href="/reach" class="howToGet">Як доїхати</a>
-              <a href="/contacts" class="contacts">Контакти</a>
-            </ul>
-            <ul>
-              <a href="/attractions" class="attractions"> Пам'ятки </a>
-              <a href="/aboutUs" class="aboutUs"> Про нас </a>
-              <a href="/events" class="blogAndEvents"> Блог та події </a>
-            </ul>
-          </div>
-          <div class="header-white-line"></div>
-          <div class="header-navigation">
-            <a href="tel:<%= mainPhones %>">
-              <div class="header-contacts__phone">
-                <img src="/image/icon-footer-telephone.svg" alt="telephone" />
-                <%= mainPhones %>
-              </div>
-            </a>
-            <a href="mailto:<%= mainEmails %>">
-              <div class="header-contacts__email">
-                <img src="/image/icon-footer-mail.svg" alt="email" />
-                <%= mainEmails %>
-              </div>
-            </a>
-            <div class="header-social-networks">
-              <a href="https://www.instagram.com/boykomandry/" target="_blank">
-                <div class="header-social-networks__instagram">
-                  <img src="/image/icon-footer-instagram.svg" alt="inst-icon" />
-                </div>
-              </a>
-              <a href="<%= facebooks %>A">
-                <div class="header-social-networks__facebook">
-                  <img src="/image/icon-footer-facebook.svg" alt="facebook-icon" />
-                </div>
-              </a>
-            </div>
-            <div class="header-language-change">
-              <img
-                loading="lazy"
-                class="header-language-change__image-earth"
-                src="/image/Globe.svg"
-                alt="earth"
-              />
-              <!-- <p class="header-language-change__layout">Ua</p> -->
-              <div class="custom-select">
-                <div class="select-trigger" style="font-family: Raleway; color: #fff">Ua</div>
-                <ul class="select-options">
-                  <li data-value="Ua">Ua</li>
-                  <li data-value="Eng">Eng</li>
-                  <li data-value="Pol">Pol</li>
-                </ul>
-              </div>
-              <img
-                loading="lazy"
-                class="language-change__image-row"
-                src="/image/mobile-header-row.svg"
-                alt="language-row"
-              />
-            </div>
-          </div>
+      
+    </header>
+    <div id="mobile-header" class="mobile-header">
+      <div class="header-info">
+        <div class="header-text">
+          <ul>
+            <a href="/routes" class="routes">Маршрути</a>
+            <a href="/services" class="services">Послуги</a>
+            <a href="/reach" class="howToGet">Як доїхати</a>
+            <a href="/contacts" class="contacts">Контакти</a>
+          </ul>
+          <ul>
+            <a href="/attractions" class="attractions"> Пам'ятки </a>
+            <a href="/aboutUs" class="aboutUs"> Про нас </a>
+            <a href="/events" class="blogAndEvents"> Блог та події </a>
+          </ul>
         </div>
-        <div class="header-image-wrap">
-          <div class="header-image">
-            <a href="#" id="close-icon" class="close-icon">
-              <img src="/image/x.svg" alt="x" />
+        <div class="header-white-line"></div>
+        <div class="header-navigation">
+          <a href="tel:<%= mainPhones %>">
+            <div class="header-contacts__phone">
+              <img src="/image/icon-footer-telephone.svg" alt="telephone" />
+              <%= mainPhones %>
+            </div>
+          </a>
+          <a href="mailto:<%= mainEmails %>">
+            <div class="header-contacts__email">
+              <img src="/image/icon-footer-mail.svg" alt="email" />
+              <%= mainEmails %>
+            </div>
+          </a>
+          <div class="header-social-networks">
+            <a href="https://www.instagram.com/boykomandry/" target="_blank">
+              <div class="header-social-networks__instagram">
+                <img src="/image/icon-footer-instagram.svg" alt="inst-icon" />
+              </div>
             </a>
+            <a href="<%= facebooks %>A">
+              <div class="header-social-networks__facebook">
+                <img src="/image/icon-footer-facebook.svg" alt="facebook-icon" />
+              </div>
+            </a>
+          </div>
+          <div class="header-language-change">
+            <img
+              loading="lazy"
+              class="header-language-change__image-earth"
+              src="/image/Globe.svg"
+              alt="earth"
+            />
+            <!-- <p class="header-language-change__layout">Ua</p> -->
+            <div class="custom-select">
+              <div class="select-trigger" style="font-family: Raleway; color: #fff">Ua</div>
+              <ul class="select-options">
+                <li data-value="Ua">Ua</li>
+                <li data-value="Eng">Eng</li>
+                <li data-value="Pol">Pol</li>
+              </ul>
+            </div>
+            <img
+              loading="lazy"
+              class="language-change__image-row"
+              src="/image/mobile-header-row.svg"
+              alt="language-row"
+            />
           </div>
         </div>
       </div>
-    </header>
+      <div class="header-image-wrap">
+        <div class="header-image">
+          <a href="#" id="close-icon" class="close-icon">
+            <img src="/image/x.svg" alt="x" />
+          </a>
+        </div>
+      </div>
+    </div>
     <div class="animate-on-scroll">
       <div class="container-title-wrap">
         <div class="container-title-wrap_2">

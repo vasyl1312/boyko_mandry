@@ -1858,7 +1858,15 @@ header.hidden {
 	}
 }
 
+.hiddengeo1{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
 
+.hiddengeo2{
+	display: none;
+}
 
 @media screen and (max-width: 410px) {
 	.container-station-img__info-img{
