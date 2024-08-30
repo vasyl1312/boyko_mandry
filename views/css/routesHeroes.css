@@ -95,7 +95,7 @@ header {
 	top: 0px;
 	width: 100%;
 	background-color: #fff;
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
 	transition: opacity 0.6s ease;
 	opacity: 1;
 }
@@ -1498,6 +1498,10 @@ header.hidden {
 	.footer-navigation {
 		margin-left: 50px;
 	}
+
+	.footer-content{
+		flex-direction: column;
+	}
 }
 
 @media screen and (max-width: 426px) {
@@ -1659,6 +1663,19 @@ header.hidden {
 
 /* -------------------------HIRE--------------------------- */
 
+
+
+
+@media screen and (max-width: 1440px) {
+	.route-versions__1{
+		gap: 40px;
+	}
+
+	.route-versions__1_title{
+		padding-left: 0px;
+	}
+}
+
 @media screen and (max-width: 1300px) {
 	.container-station-subtitle {
 		padding: 0px 200px;
@@ -1691,6 +1708,10 @@ header.hidden {
 	.route-versions__1_title {
 		padding: 0px 0px 127px 0px;
 	}
+
+	.element{
+		padding: 0px;
+	}
 }
 
 @media screen and (max-width: 1025px) {
@@ -1700,5 +1721,179 @@ header.hidden {
 
 	.container-station-paragraph {
 		padding: 0px 100px;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	.container-station-subtitle {
+		padding: 0px 100px;
+	}
+
+	.container-station-paragraph {
+		padding: 0px 100px;
+	}
+
+	.element{
+		padding: 0px 0px;
+	}
+
+	.route-versions__1{
+		padding: 38px;
+	}
+
+	.route-wrap{
+		margin: 0px 28px;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 1010px){
+		
+	.stationImage img {
+		padding: 0px 20px;
+	}
+
+	.container-station-img {
+		padding: 0px 20px;
+	}
+
+	.route-versions__1{
+		flex-direction: column;
+	}
+
+	.route-versions__1_title{
+		width: 100%;
+	}
+
+	.container-station-img{
+		flex-direction: column;
+	}
+
+	.container-station-img__title-img img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 950px){
+	.route-versions__1{
+		flex-direction: column;
+	}
+
+	.route-versions__1_title{
+		padding: 0px;
+		width: 100%;
+	}
+
+	.accentCcontainerimg > .container-station-img{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.accentCcontainerimg > .container-station-img__title-img{
+		width: 100%;
+	} 
+}
+
+
+@media screen and (max-width: 590px){
+	.route-wrap{
+		margin: 0px 0px;
+		margin-top: 20px;
+	}
+
+	.route1Translate{
+		font-size: 48px;
+	}
+
+	.routes1-subtitle{
+		font-size: 16px;
+		width: 100%;
+	}
+
+	.levelTranslate1{
+		font-size: 14px;
+	}
+
+	.routes1-info-wrap__distance{
+		font-size: 14px;
+	}
+
+	.routes1-info-wrap__height{
+		font-size: 14px;
+	}
+
+	.route-versions__1{
+		padding: 10px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.route-versions__1_title{
+		padding: 0px 0px 40px 0px;
+		width: 100%;
+	}
+
+	.container-station-img__title-img{
+		width: 100%;
+	}
+
+	.container-station-subtitle{
+		padding: 0px 10px;
+		font-size: 40px;
+	}
+
+	.container-station-paragraph{
+		padding: 0px 10px;
+		font-size: 16px;
+	}
+
+	.hiddengeo1{
+		display: none;
+	}
+
+	.hiddengeo2{
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+}
+
+
+
+@media screen and (max-width: 410px) {
+	.container-station-img__info-img{
+		width: 100%;
+	}
+
+	.container-station{
+		width: fit-content;
+		margin: 0 auto;
+	}
+
+	.element{
+		justify-content: unset;
+		align-items: unset;
+	}
+
+	.container-station-img{
+		padding: 0px 10px;
+	}
+
+	.second-line{
+		margin-top: 8px;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.routes1-line > p{
+		font-size: 12px;
+	}
+
+	.routes1-info-wrap p{
+		font-size: 12px;
+	}
+
+	.hiddengeo2 > p{
+		font-size: 12px;
 	}
 }
