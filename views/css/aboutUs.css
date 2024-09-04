@@ -1078,6 +1078,89 @@ header.hidden {
 
 
 
+@media screen and (max-width: 700px){
+    .containerTxtInfo{
+        padding: 0px 10px;
+        margin-top: 40px;
+    }
+
+    .containerTitle{
+        padding: 0px 10px;
+    }
+
+    .containerTitle__title{
+        font-size: 48px;
+    }
+
+    .containerTitle__photoWrap{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .containerUniqLocations{
+        padding: 0px 10px;
+    }
+
+    .containerUniqLocations__title{
+        padding: 0px 10px;
+    }
+
+    .containerUniqLocations__title{
+        font-size: 48px;
+    }
+
+    .containerUniqLocations__accentTxt{
+        font-size: 18px;
+    }
+
+    .containerUniqLocations-locationsInfoWrap{
+        flex-direction: column;
+    }
+
+    .containerUniqLocations-locationsInfoWrap__hymn{
+        width: 100%;
+    }
+
+    .containerUniqLocations-locationsInfoWrap__hymn_title{
+        font-size: 32px;
+    }
+
+    .containerUniqLocations-locationsInfoWrap__hymn_txt{
+        font-size: 14px;
+    }
+
+    .containerUniqLocations-locationsInfoWrap__otherData_el p{
+        font-size: 14px;
+    }
+
+    .containerMountains__title{
+        padding: 0px 10px;
+    }
+
+    .containerMountains__title h2{
+        color: var(--black, #131415);
+        text-align: center;
+
+        /* mob H3 */
+        font-family: "Alumni Sans";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 88%; /* 35.2px */
+    }
+
+    .containerMountains__title h2>span{
+        color: var(--green, #01594D);
+
+        /* mob H3 */
+        font-family: "Alumni Sans";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 88%;
+    }
+}
+
 
 /* -------------------------HEADER--------------------------- */
 @media screen and (max-width: 995px) {
@@ -1215,6 +1298,18 @@ header.hidden {
 
     .footer-navigation {
         margin-left: 50px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .footer-contacts{
+        margin-left: 0px;
+    }
+
+    .footer-navigation{
+        margin-left: 0px;
     }
 }
 
