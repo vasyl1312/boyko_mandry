@@ -94,7 +94,7 @@ header {
     top: 0px;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     transition: opacity 0.6s ease;
     opacity: 1;
 }
@@ -644,6 +644,33 @@ header.hidden {
 .popUpDisplay__infoWrap_title p:nth-child(1) {
     justify-content: start;
 }
+
+.popUpDisplay__infoWrap_title_mobile{
+    display: none;
+}
+
+.popUpDisplay__infoWrap_title_mobile>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 20px;
+
+    border-radius: 8px;
+    background: var(--light-green, #CFE8D0);
+
+    color: var(--black, #131415);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.18px;
+
+    width: 100%;
+}
+
 
 .popUpDisplay__infoWrap_element {
     display: flex;
@@ -1245,7 +1272,74 @@ header.hidden {
 
 
 
+@media screen and (max-width: 600px){
+    .container-titleServices{
+        padding: 0px 10px;
+        font-size: 48px;
+        margin-top: 40px;
+    }
 
+    .container-titleServices>p{
+        font-size: 16px;
+    }
+
+    .container-servicesWrap{
+        padding: 0px 10px;
+    }
+
+    .popup-button{
+        font-size: 14px;
+    }
+
+    .button{
+        font-size: 14px;
+        gap: 0px;
+        padding: 12px 8px;
+    }
+
+    .page-navigation{
+        margin-top: 120px;
+    }
+
+    .popUpDisplay__titleWrap{
+        flex-direction: column-reverse;
+
+    }
+
+    .popUpDisplay__titleWrap_txt{
+        width: 100%;
+    }
+
+    .popUpDisplay{
+        padding: 15px;
+    }
+
+    .popUpDisplay__infoWrap_title{
+        display: none;
+    }
+
+    .popUpDisplay__infoWrap_title_mobile{
+        display: flex;
+    }
+
+    .wrapperPopup{
+        padding: 20px;
+    }
+
+    .popUpDisplay__infoWrap_elementCostHour::after {
+        content: "/година";
+    }
+    
+    .popUpDisplay__infoWrap_elementCostEra::after {
+        content: "/доба";
+    }
+
+    .popUpDisplay__infoWrap_element{
+        padding: 0px;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
 
 /* -------------------------HEADER--------------------------- */
 @media screen and (max-width: 995px) {
@@ -1494,3 +1588,4 @@ header.hidden {
 }
 
 /* -------------------------FOOTER--------------------------- */
+
