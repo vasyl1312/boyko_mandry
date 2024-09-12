@@ -94,7 +94,7 @@ header {
 	top: 0px;
 	width: 100%;
 	background-color: #fff;
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
 	transition: opacity 0.6s ease;
 	opacity: 1;
 }
@@ -728,6 +728,71 @@ header.hidden {
 	.itemImgBlock {
 		/* padding: 0px auto; */
 		margin: 5% auto;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.titleBlock__title{
+		font-size: 48px;
+	}
+
+	.mainTitleBlock{
+		padding: 48px 10px 10px 10px;
+	}
+
+	.reach-wrap{
+		margin: 0px;
+		margin-top: 20px;
+	}
+
+	.navigationReach ul{
+		gap: 12px;
+	}
+
+	.navigationReach li{
+		font-size: 23px;
+	}
+
+	.container{
+		padding: 0px 10px;
+	}
+
+	.titleWrap h2{
+		font-size: 44px;
+	}
+
+	.titleWrap p{
+		font-size: 16px;
+	}
+
+	.titleWrap a{
+		font-size: 16px;
+	}
+
+	.buttonTitle{
+		padding: 11px 13px;
+	}
+
+	.container__navigationItems{
+		overflow-x: unset;
+	}
+
+	.item{
+		padding: 40px 0px 0px 15px;
+	}
+
+	.container-reach{
+		margin-bottom: 120px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.navigationReach li{
+		font-size: 17px;
+	}
+
+	.itemImgBlock{
+		padding-right: 15px;
 	}
 }
 
