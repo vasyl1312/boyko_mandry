@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1"
+    />
+    <link rel="stylesheet" href="/css/attraction.css" />
+    <link rel="stylesheet" href="/views/css/menuadaptive.css">
+    <link rel="shortcut icon" href="/image/logo-icon.png" type="image/x-icon" />
+    <meta name="description" content="Безкоштовні туристичні маршрути горами Бойківщини" />
+    <meta
+      name="keywords"
+      content="екотуризм, походи в гори, мандри, піший туризм, вело туризм , Бойківщина, Карпати, бойко мандри, бойкомандри, Бойкомандри, Бойко Мандри, БойкоМандри, піший маршрут, веломаршрут"
+    />
+    <title>БойкоМандри</title>
+    <title>Безкоштовні туристичні маршрути горами Бойківщини</title>
+  </head>
+  <header>
+    <div id="container-header" class="container-header">
+      <div class="logo">
+        <a href="/"><img src="/image/logo.svg" alt="logo" /></a>
+      </div>
+      <div class="navigation">
+        <div class="navigation__item">
+          <ul>
+            <a class="navigation__item__1" href="/routes">
+              <li class="routes">Поїздки</li>
+            </a>
+            <a class="navigation__item__2" href="/services">
+              <li class="services">Послуги</li>
+            </a>
+            <a class="navigation__item__3" href="/contacts">
+              <li class="contacts">Контакти</li>
+            </a>
+          </ul>
+        </div>
+        <div class="language-change">
+          <img
+            loading="lazy"
+            class="language-change__image-earth"
+            src="/image/language.svg"
+            alt="earth"
+          />
+          <!-- <p class="language-change__layout">Ua</p> -->
+          <div class="custom-select">
+            <div class="select-trigger"></div>
+            <ul class="select-options">
+              <li data-value="Ua">Ua</li>
+              <li data-value="Pol">Pol</li>
+              <li data-value="Eng">Eng</li>
+            </ul>
+          </div>
+          <img
+            loading="lazy"
+            class="language-change__image-row"
+            src="/image/language-row.svg"
+            alt="language-row"
+          />
+        </div>
+        <div class="contacts-wrap">
+          <a href="tel:<%= mainPhones %>">
+            <div class="contacts-wrap__button">
+              <img
+                loading="lazy"
+                class="contacts-wrap__image-phone"
+                src="/image/telephone.svg"
+                alt="Telephone"
+              />
+              <p class="contacts-wrap__text"><%= mainPhones %></p>
+            </div>
+          </a>
+        </div>
+        <div id="menu" class="menu">
+          <a href="#" class="menu__button">
+            <span class="menuText">Меню</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-header" class="mobile-header">
+      <div class="header-info">
+        <div class="header-text">
+          <ul>
+            <a href="/routes" class="routes">Маршрути</a>
+            <a href="/services" class="services">Послуги</a>
+            <a href="/reach" class="howToGet">Як доїхати</a>
+            <a href="/contacts" class="contacts">Контакти</a>
+          </ul>
+          <ul>
+            <a href="/attractions" class="attractions"> Пам'ятки </a>
+            <a href="/aboutUs" class="aboutUs"> Про нас </a>
+            <a href="/events" class="blogAndEvents"> Блог та події </a>
+          </ul>
+        </div>
+        <div class="header-white-line"></div>
+        <div class="header-navigation">
+          <a href="tel:<%= mainPhones %>">
+            <div class="header-contacts__phone">
+              <img src="/image/icon-footer-telephone.svg" alt="telephone" />
+              <%= mainPhones %>
+            </div>
+          </a>
+          <a href="mailto:<%= mainEmails %>">
+            <div class="header-contacts__email">
+              <img src="/image/icon-footer-mail.svg" alt="email" />
+              <%= mainEmails %>
+            </div>
+          </a>
+          <div class="header-social-networks">
+            <a href="https://www.instagram.com/boykomandry/" target="_blank">
+              <div class="header-social-networks__instagram">
+                <img src="/image/icon-footer-instagram.svg" alt="inst-icon" />
+              </div>
+            </a>
+            <a href="<%= facebooks %>A" target="_blank">
+              <div class="header-social-networks__facebook">
+                <img src="/image/icon-footer-facebook.svg" alt="facebook-icon" />
+              </div>
+            </a>
+          </div>
+          <div class="header-language-change">
+            <img
+              loading="lazy"
+              class="header-language-change__image-earth"
+              src="/image/Globe.svg"
+              alt="earth"
+            />
+            <!-- <p class="header-language-change__layout">Ua</p> -->
+            <div class="custom-select">
+              <div class="select-trigger" style="font-family: Raleway; color: #fff">Ua</div>
+              <ul class="select-options">
+                <li data-value="Ua">Ua</li>
+                <li data-value="Eng">Eng</li>
+                <li data-value="Pol">Pol</li>
+              </ul>
+            </div>
+            <img
+              loading="lazy"
+              class="language-change__image-row"
+              src="/image/mobile-header-row.svg"
+              alt="language-row"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header-image-wrap">
+        <div class="header-image">
+          <a href="#" id="close-icon" class="close-icon">
+            <img src="/image/x.svg" alt="x" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-navigation">
+    <p class="page-navigation__main">
+      <a class="NavMain" href="/">Головна</a>
+    </p>
+    <p class="page-navigation__row">></p>
+    <p class="page-navigation__attractions">
+      <a class="NavAttractions" href="/attractions">Пам'ятки Бойківщини</a>
+    </p>
+    <p class="page-navigation__row">></p>
+    <p class="page-navigation__attraction">
+      <a class="NavAttraction" href="/attractionTurie">Село Тур’є: історія, легенди та особистості</a>
+    </p>
+  </div>
+
+  <body>
+    <div class="container-attraction">
+      <div class="container-attraction__title">
+        <h1>Село Тур’є: історія, легенди та особистості</h1>
+      </div>
+      <div class="container-attraction__image">
+        <img src="/image-page-attraction/Герб села Тур'є (2).png" alt="turie" />
+      </div>
+      <div class="container-attraction__txt">
+            Тур’є — давнє бойківське село, найдовше у Стрілківській громаді (площа 555 га, довжина всіх вулиць — 36 км). 
+            Ще в часи Київської Руси тут було військове городище та сторожове поселення, яке захищало прадавній торговий шлях «Руський Путь». У селі збереглися сліди ранньоісторичних валів. Археологи знайшли тут давньоруський меч та інші речі. Перша збережена письмова згадка про село датується, за одними даними, 1345 роком, за іншими — 1473. 
+            Тур’є складається з кількох хуторів, які утворюють три історичні частини: Тур’є Долішнє (Тур’є Нижнє), Тур’є Горішнє (Тур’є Вижнє) та Тур’є Заділок (Тур’є Заділ — найбільший хутір Старосамбірщини).
+            Школа у Тур’є відкрилася ще у 60-х роках ХІХ ст., чи не найшвидше серед довколишніх сіл. У 1894 р. вже було дві школи з українською мовою викладання в Горішньому і Долішньому кінцях. В цей час в селі працювали урядова пошта, позичкова каса з капіталом 790 золотих ринських, та 9 тартаків (пилорам), які виготовляли 630 м. куб. дощок і брусів — значно більше, аніж у довколишніх селах. Міщани приїжджали влітку в Тур’є через вдале розташування села та кліматичні умови. 
+            У 1937 р. у Тур’є-Горішньому для ведення національно-визвольної боротьби заснували руханково-пожарне товариство «Луг» (керівники: Василь Зеленяк, Василь Керт та о. Салтикевич). В тому ж році Василь Керч створив хату-читальню, де селяни навчались елементарних навичок письма та читання (вчитель — Василь Оленяк). 
+            У часи Других визвольних змагань у Тур’є та довколишніх селах активно діяли групи УПА, зокрема про бої біля цього села згадує легендарний командир ТВ-24 «Маківка» Степан Стебельський «Хрін» та чотовий Олекса Конопадський «Островерх». 
+            Про перебування в Тур’є «Великого князя» існують перекази місцевих жителів. За однією з версій, мова йде про Данила Галицького, який їхав «Руським Путем», торговим шляхом, що пролягав через село, за іншою версією — Володимира Великого. 
+            Інша місцева легенда розповідає: «У часи монголо-татарської навали на скалі був замок, а внизу — вхід в печеру. Коли татари напали, вони вимагали від місцевих принести данину. Люди поклали данину в печеру. Коли татари зайшли її забрати, печера закрилася та всіх поховала».
+            Легенда про походження назви села:  «Одного разу нетутешні лісники під час полювання потрапили сюди і запитали людей: “Чи є у вашому селі тур?”. Їм відповіли “Є!”. З тих пір село отримало назву “Тур’є”».
+            У 1874 р. в селі побував Іван Франко, який, ще будучи  на той час школярем, влаштував для себе першу туристичну мандрівку бойківськими селами.
+            Василь Зеленяк (нар. 1910 р.) — багатогранно обдарований чоловік, майстер, різьбяр по дереву, музикант, досвідчений травматолог, драматург (писав п’єси, з якими у 1937-39 рр. виступав із вчителями та молоддю у рідному та навколишніх селах), керівник товариства «Луг» у Тур’є (1937-1939 рр.)
+            У 1944 р. в Тур’є Горішньому проживала дружина і донька Кирила Осьмака — голови Української Головної Визвольної Ради.
+            Омелян Калужняцький (1845-1914) — мовознавець-славіст, палеограф, ректор Чернівецького університету. Досліджував проблеми польського, російського, сербського, болгарського, старослов’янського мовознавства, народознавства та історії права. 
+            В селі є музей народознавства, де зібрано багато старовинних вишивок, ікон, старовинних речей. Дотепер в селі зберігається весільна обрядовість (різання барвінку, латканки і троїсті музики) і традиційні весільні атрибути (вінки, гільце, рушники, квітки, калачі, коровай).
+        </div>
+      <div class="container-attraction__imagePlusvideo">
+        <div class="container-attraction__imagePlusvideo_image">
+          <img src="/image-page-routesHeroes/station4Main.webp" alt="turie" />
+        </div>
+        <div class="container-attraction__imagePlusvideo_video">
+          <img src="/image-page-routesHeroes/station4Attrac.jpg" alt="turie" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-footer">
+        <div class="animate-on-scroll">
+          <div class="footer-content">
+            <div class="footer-logos">
+              <div class="footer-logos__main">
+                <img src="/image/logo-footer.svg" alt="logo" />
+              </div>
+              <div class="footer-logos__main-info">
+                <p class="footerMainTransalte">
+                  БойкоМандри: туристичні маршрути Стрілківської громади
+                </p>
+              </div>
+              <div class="footer-logos__partner-info">
+                <p class="footerPartnerTransalte">
+                  Проєкт реалізується за підтримки Українського культурного фонду та Стрілківської
+                  сільської ради
+                </p>
+              </div>
+              <div class="footer-logos__partner">
+                <img src="/image/UCF-logo.svg" alt="logo" />
+                <img src="/image/Strilku-logo.svg" alt="logo" />
+              </div>
+            </div>
+            <div class="footer-navigation">
+              <div class="footer-navigation__column1">
+                <a href="/routes">
+                  <p class="routes">Маршрути</p>
+                </a>
+                <a href="/services">
+                  <p class="services">Послуги</p>
+                </a>
+                <a href="/reach">
+                  <p class="howToGet">Як доїхати</p>
+                </a>
+                <a href="/contacts">
+                  <p class="contacts">Контакти</p>
+                </a>
+              </div>
+              <div class="footer-navigation__column2">
+                <a href="/attractions">
+                  <p class="attractions">Пам'ятки</p>
+                </a>
+                <a href="/aboutUs">
+                  <p class="aboutUs">Про нас</p>
+                </a>
+                <a href="/events">
+                  <p class="blogAndEvents">Блог та події</p>
+                </a>
+              </div>
+            </div>
+            <div class="footer-contacts">
+              <a href="tel:<%= mainPhones %>">
+                <div class="footer-contacts__phone">
+                  <img src="/image/icon-footer-telephone.svg" alt="telephone" />
+                  <%= mainPhones %>
+                </div>
+              </a>
+              <a href="mailto:<%= mainEmails %>">
+                <div class="footer-contacts__email">
+                  <img src="/image/icon-footer-mail.svg" alt="email" />
+                  <%= mainEmails %>
+                </div>
+              </a>
+              <div class="footer-social-networks">
+                <a href="https://www.instagram.com/boykomandry/" target="_blank">
+                  <div class="footer-social-networks__instagram">
+                    <img src="/image/icon-footer-instagram.svg" alt="inst-icon" />
+                  </div>
+                </a>
+                <a href="<%= facebooks %>A" target="_blank">
+                  <div class="footer-social-networks__facebook">
+                    <img src="/image/icon-footer-facebook.svg" alt="facebook-icon" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="white-line"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom__laws">
+            <p class="footerLawsTranslate">Усі права захищені</p>
+          </div>
+          <div class="footer-bottom__politic">
+            <p class="footerPoliticTranslate">Політика конфіденційності</p>
+          </div>
+          <div class="footer-bottom__designer">
+            <p class="footerDesignerTranslate">Дизайнер: Барабаш Анастасія</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/attraction.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+    <script src="/js/langChange.js"></script>
+  </body>
+</html>
