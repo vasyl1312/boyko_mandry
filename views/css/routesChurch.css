@@ -253,7 +253,7 @@ header.hidden {
 
 .contacts-wrap__text {
 	height: 24px;
-	width: 135px;
+	width: max-content;
 }
 
 .menu {
@@ -625,7 +625,7 @@ header.hidden {
 
 .stationImage img {
 	max-width: 100%;
-	height: 100%;
+	height: 60%;
 	/* padding: 0px 185px; */
 	border-radius: 20px;
 }
@@ -1828,6 +1828,10 @@ header.hidden {
 	.container-station-paragraph{
 		padding: 0px 10px;
 		font-size: 16px;
+	}
+
+	.wrap-info{
+		margin-top: 3%;
 	}
 }
 

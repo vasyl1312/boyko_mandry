@@ -253,7 +253,7 @@ header.hidden {
 
 .contacts-wrap__text {
 	height: 24px;
-	width: 135px;
+	width: max-content;
 }
 
 .menu {
@@ -625,7 +625,7 @@ header.hidden {
 
 .stationImage img {
 	max-width: 100%;
-	height: 100%;
+	height: 60%;
 	/* padding: 0px 185px; */
 	border-radius: 20px;
 }
@@ -1616,6 +1616,7 @@ header.hidden {
 @media screen and (max-width: 1025px) {
 	.hire-background__subtitle {
 		font-size: 64px;
+		padding: 5%;
 	}
 
 	.hire-background__button p {
@@ -1627,9 +1628,9 @@ header.hidden {
 	}
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 430px) {
 	.container-hire-wrap {
-		height: 667px;
+		height: 80%;
 	}
 
 	.container-hire-wrapper {
@@ -1638,6 +1639,7 @@ header.hidden {
 
 	.hire-background__title {
 		font-size: 12px;
+		padding-top: 17%;
 	}
 
 	.hire-background__subtitle {
@@ -1782,6 +1784,8 @@ header.hidden {
 	.container-station-img__title-img img {
 		width: 100%;
 	}
+
+
 }
 
 @media screen and (max-width: 950px){
@@ -1865,6 +1869,15 @@ header.hidden {
 		display: flex;
 		align-items: center;
 		gap: 8px;
+	}
+
+	.wrap-info{
+		margin-top: 3%;
+	}
+
+	.hire-background__subtitle {
+		padding: 5%;
+		font-size: 40px;
 	}
 }
 
