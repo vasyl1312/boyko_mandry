@@ -253,7 +253,7 @@ header.hidden {
 
 .contacts-wrap__text {
 	height: 24px;
-	width: 135px;
+	width: max-content;
 }
 
 .menu {
@@ -638,7 +638,7 @@ opacity: 0.9;
 
 .stationImage img {
 	max-width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	/* padding: 0px 185px; */
 	border-radius: 20px;
 }
@@ -1513,7 +1513,7 @@ opacity: 0.9;
 	}
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 430px) {
 	.footer-content {
 		flex-direction: column;
 		padding: 68px 32px 0px 32px;
@@ -1626,7 +1626,7 @@ opacity: 0.9;
 	}
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 430px) {
 	.container-hire-wrap {
 		height: 667px;
 	}
@@ -1640,8 +1640,8 @@ opacity: 0.9;
 	}
 
 	.hire-background__subtitle {
-		font-size: 44px;
-		padding: 0px 24px;
+		font-size: 40px;
+		padding: 5%;
 	}
 
 	.hire-image img {
@@ -1888,9 +1888,13 @@ opacity: 0.9;
 		padding: 0px 10px;
 		font-size: 16px;
 	}
+
+	.wrap-info{
+		margin-top: 10%;
+	}
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 430px) {
 	.container-station-img__info-img{
 		width: 100%;
 	}

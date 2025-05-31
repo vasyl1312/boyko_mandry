@@ -253,7 +253,7 @@ header.hidden {
 
 .contacts-wrap__text {
     height: 24px;
-    width: 135px;
+    width: max-content;
 }
 
 .menu {
