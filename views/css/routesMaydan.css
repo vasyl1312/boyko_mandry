@@ -586,7 +586,7 @@ header.hidden {
 
 .info-ChurchIMG {
 	width: 100%;
-	height: -webkit-fill-available;
+	/* height: -webkit-fill-available; */
 }
 
 .info-ChurchIMG img {
