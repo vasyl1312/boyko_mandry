@@ -573,7 +573,7 @@ header.hidden {
 
 .info-ChurchIMG {
 	width: 100%;
-	height: -webkit-fill-available;
+	/* height: -webkit-fill-available; */
 }
 
 .info-ChurchIMG img {
@@ -1831,7 +1831,7 @@ header.hidden {
 	}
 
 	.wrap-info{
-		margin-top: 0;
+		margin-top: 8%;
 	}
 
 	.container-station-img__info-img{
