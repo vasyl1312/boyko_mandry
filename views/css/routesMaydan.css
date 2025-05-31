@@ -523,15 +523,15 @@ header.hidden {
 
 .descriptionForstationPhoto{
 	color: var(--black, #131415);
-text-align: center;
-font-variant-numeric: lining-nums proportional-nums;
-font-family: Raleway;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 140%; /* 19.6px */
-letter-spacing: 0.14px;
-opacity: 0.9;
+	text-align: center;
+	font-variant-numeric: lining-nums proportional-nums;
+	font-family: Raleway;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%; /* 19.6px */
+	letter-spacing: 0.14px;
+	opacity: 0.9;
 }
 
 .container-station-subtitle {
