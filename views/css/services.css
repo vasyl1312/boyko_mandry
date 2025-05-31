@@ -841,6 +841,13 @@ header.hidden {
     }
 }
 
+@media screen and (max-width: 435px) {
+    
+    .popUpDisplay__titleWrap_txt h1 {
+        font-size: 40px;
+    }
+}
+
 /* ------------------------------------------------------ */
 .container-footer {
     background: #01594D;
@@ -1357,7 +1364,7 @@ header.hidden {
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 430px) {
     .logo {
         margin: 20px 0px 20px 32px;
     }
@@ -1368,6 +1375,16 @@ header.hidden {
 
     .page-navigation {
         padding-left: 32px;
+    }
+
+    .popUpDisplay__closeIcon{
+        top: 5px;
+        right: 5px;
+    }
+
+    .container-servicesWrap__elementWrap>img {
+    width: 100%;
+    height: unset;
     }
 }
 
