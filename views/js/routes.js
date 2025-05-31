@@ -5,6 +5,13 @@ let lastScrollPosition = window.scrollY;
 window.onscroll = () => {
     const currentScrollPosition = window.scrollY;
 
+    if (
+        currentScrollPosition < 5 ||
+        Math.abs(currentScrollPosition - lastScrollPosition) < 2
+    ) {
+        return;
+    }
+
     if (currentScrollPosition > lastScrollPosition) {
         // Прокрутка вниз: ховаємо хедер плавно
         header.style.transition = 'opacity 0.5s ease';
